@@ -1,18 +1,27 @@
 //
-//  XTNaviagtionController.swift
+//  LCRegisterController.swift
 //  JXLiCai
 //
-//  Created by dengtao on 2017/6/27.
+//  Created by dengtao on 2017/7/28.
 //  Copyright © 2017年 JingXian. All rights reserved.
 //
 
 import UIKit
 
-class XTNaviagtionController: UINavigationController {
+class LCRegisterController: XTViewController {
 
+    @IBOutlet weak var telTextField: UITextField!
+    
+    @IBOutlet weak var passwordTextField: UITextField!
+    
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.title = "注册";
+        
         // Do any additional setup after loading the view.
     }
 
@@ -21,18 +30,6 @@ class XTNaviagtionController: UINavigationController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func pushViewController(_ viewController: UIViewController, animated: Bool) {
-        
-//        viewController.navigationItem.backBarButtonItem?.setTitleTextAttributes([NSBackgroundColorAttributeName:UIColor.white], for: UIControlState.normal);
-        
-//        viewController.navigationItem.setTitleTextAttributes([NSBackgroundColorAttributeName:UIColor.white], for: UIControlState.normal);
-        
-        if self.childViewControllers.count > 0 {
-            
-            viewController.hidesBottomBarWhenPushed = true;
-        }
-        super .pushViewController(viewController, animated: true);
-    }
 
     /*
     // MARK: - Navigation

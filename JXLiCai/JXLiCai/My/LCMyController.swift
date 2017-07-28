@@ -71,11 +71,13 @@ class LCMyController: XTViewController{
     func messageAction() {
         
         NSLog("点击了消息")
+        
     }
     
     func settingAction() {
         
         NSLog("点击了设置")
+        self.login(isLogin: true);
     }
     
     func itemAction(_ button:UIButton) {

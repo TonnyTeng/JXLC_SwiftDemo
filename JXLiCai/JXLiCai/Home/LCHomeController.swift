@@ -71,8 +71,6 @@ class LCHomeController: XTViewController {
         
     }
     
-    
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }

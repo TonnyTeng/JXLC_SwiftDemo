@@ -26,6 +26,8 @@
 		062CD53F1F025190007833B0 /* LCActivityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062CD53E1F025190007833B0 /* LCActivityController.swift */; };
 		062CD5411F02519B007833B0 /* LCMyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062CD5401F02519B007833B0 /* LCMyController.swift */; };
 		063438E51F2B27B600A6C4C5 /* LCClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063438E41F2B27B600A6C4C5 /* LCClient.swift */; };
+		063438E81F2B36FA00A6C4C5 /* LCRegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063438E61F2B36FA00A6C4C5 /* LCRegisterController.swift */; };
+		063438E91F2B36FA00A6C4C5 /* LCRegisterController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 063438E71F2B36FA00A6C4C5 /* LCRegisterController.xib */; };
 		063EACB31F0A35840043D78C /* CycleScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063EACB21F0A35840043D78C /* CycleScrollView.swift */; };
 		063EACB51F0A362B0043D78C /* Proxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063EACB41F0A362B0043D78C /* Proxy.swift */; };
 		063EACB71F0A467A0043D78C /* CycleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063EACB61F0A467A0043D78C /* CycleCell.swift */; };
@@ -79,6 +81,8 @@
 		062CD53E1F025190007833B0 /* LCActivityController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCActivityController.swift; sourceTree = "<group>"; };
 		062CD5401F02519B007833B0 /* LCMyController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCMyController.swift; sourceTree = "<group>"; };
 		063438E41F2B27B600A6C4C5 /* LCClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCClient.swift; sourceTree = "<group>"; };
+		063438E61F2B36FA00A6C4C5 /* LCRegisterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCRegisterController.swift; sourceTree = "<group>"; };
+		063438E71F2B36FA00A6C4C5 /* LCRegisterController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LCRegisterController.xib; sourceTree = "<group>"; };
 		063EACB21F0A35840043D78C /* CycleScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CycleScrollView.swift; sourceTree = "<group>"; };
 		063EACB41F0A362B0043D78C /* Proxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Proxy.swift; sourceTree = "<group>"; };
 		063EACB61F0A467A0043D78C /* CycleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CycleCell.swift; sourceTree = "<group>"; };
@@ -121,6 +125,8 @@
 			children = (
 				06161E6F1F29D2260027E38F /* LCLoginController.swift */,
 				06161E701F29D2260027E38F /* LCLoginController.xib */,
+				063438E61F2B36FA00A6C4C5 /* LCRegisterController.swift */,
+				063438E71F2B36FA00A6C4C5 /* LCRegisterController.xib */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -440,6 +446,7 @@
 			files = (
 				062CD5041F020877007833B0 /* LaunchScreen.storyboard in Resources */,
 				062CD5011F020877007833B0 /* Assets.xcassets in Resources */,
+				063438E91F2B36FA00A6C4C5 /* LCRegisterController.xib in Resources */,
 				06161E721F29D2260027E38F /* LCLoginController.xib in Resources */,
 				062CD4FF1F020877007833B0 /* Main.storyboard in Resources */,
 			);
@@ -523,6 +530,7 @@
 				062CD53B1F02514E007833B0 /* LCHomeController.swift in Sources */,
 				062CD5381F023373007833B0 /* XTTableViewController.swift in Sources */,
 				063EACB51F0A362B0043D78C /* Proxy.swift in Sources */,
+				063438E81F2B36FA00A6C4C5 /* LCRegisterController.swift in Sources */,
 				06765B9E1F0F283900B697F0 /* ActivityListCell.swift in Sources */,
 				062CD53D1F025178007833B0 /* LCFinancialController.swift in Sources */,
 				062CD5341F023347007833B0 /* XTViewController.swift in Sources */,

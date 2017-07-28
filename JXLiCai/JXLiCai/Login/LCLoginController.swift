@@ -55,6 +55,9 @@ class LCLoginController: UIViewController {
     @IBAction func registerAction(_ sender: UIButton) {
         
         NSLog("register")
+        let registerVC = LCRegisterController.init(nibName: "LCRegisterController", bundle: Bundle.main)
+
+        self.navigationController?.pushViewController(registerVC, animated: true)
         
     }
     @IBAction func showStatusPassWordAction(_ sender: UIButton) {

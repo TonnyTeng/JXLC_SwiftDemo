@@ -39,7 +39,6 @@ class XTViewController: UIViewController {
     func login(isLogin:Bool){
         
         let login = LCLoginController.init(nibName: "LCLoginController", bundle: Bundle.main)
-//        self.hidesBottomBarWhenPushed = true;
         if isLogin {
             
             self.navigationController?.pushViewController(login, animated: true)
