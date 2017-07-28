@@ -1,0 +1,10 @@
+platform :ios, '8.0'
+use_frameworks!
+
+target 'JXLiCai' do
+
+pod 'Kingfisher', '~> 3.10'#图片处理
+pod 'Alamofire'#网络库'
+
+
+end

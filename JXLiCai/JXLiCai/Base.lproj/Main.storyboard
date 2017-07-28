@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="YsM-K0-hGj">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="mUu-Eq-Rcs">
+            <objects>
+                <tabBarController id="YsM-K0-hGj" customClass="XTTabBarController" customModule="JXLiCai" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="S6j-qb-CUY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="5nP-yb-T3d" kind="relationship" relationship="viewControllers" id="fH9-Ny-KBY"/>
+                        <segue destination="We9-dE-rh0" kind="relationship" relationship="viewControllers" id="6CP-Sa-9bC"/>
+                        <segue destination="61w-Au-Hn2" kind="relationship" relationship="viewControllers" id="Tna-nX-rdT"/>
+                        <segue destination="zRd-VU-tql" kind="relationship" relationship="viewControllers" id="pK1-Yd-J8v"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wbf-L1-OTL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-374" y="1278"/>
+        </scene>
+        <!--首页-->
+        <scene sceneID="g7g-9J-vfT">
+            <objects>
+                <navigationController id="5nP-yb-T3d" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="首页" image="nav_icon_home_Selected" selectedImage="nav_icon_home_default" id="BPC-mu-wRK"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4oz-yG-qs6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="XD5-5M-ddq" kind="relationship" relationship="rootViewController" id="S4l-yu-c6k"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h9Z-ig-SCD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="734" y="-489"/>
+        </scene>
+        <!--Home Controller-->
+        <scene sceneID="Mcx-2m-xOk">
+            <objects>
+                <viewController id="XD5-5M-ddq" customClass="LCHomeController" customModule="JXLiCai" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vVF-dp-rKg"/>
+                        <viewControllerLayoutGuide type="bottom" id="khh-om-uJ1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8Iw-aY-n7c">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.1231458116" blue="0.13324866539999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="5XI-bz-jG5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h5v-hb-nGF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1582" y="-490"/>
+        </scene>
+        <!--理财-->
+        <scene sceneID="hkg-8B-i0l">
+            <objects>
+                <navigationController id="We9-dE-rh0" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="理财" image="nav_icon_financial_Selected" selectedImage="nav_icon_financial_default" id="p6r-m7-qHG"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="O1y-bS-dea">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="PSL-TL-4kA" kind="relationship" relationship="rootViewController" id="7eQ-h8-fqd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IWN-Sp-kDc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="734" y="226"/>
+        </scene>
+        <!--Financial Controller-->
+        <scene sceneID="IQs-ww-lr7">
+            <objects>
+                <viewController id="PSL-TL-4kA" customClass="LCFinancialController" customModule="JXLiCai" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5ga-IT-ial"/>
+                        <viewControllerLayoutGuide type="bottom" id="Jqt-1c-Vpf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mmb-i8-EHg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="zgX-Dd-wXi">
+                                <rect key="frame" x="46" y="74" width="283" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="A1R-hF-VRp"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="祥和宝"/>
+                                    <segment title="福慧宝"/>
+                                    <segment title="实惠宝"/>
+                                    <segment title="财充盈"/>
+                                </segments>
+                                <connections>
+                                    <action selector="changeFinancialType:" destination="PSL-TL-4kA" eventType="valueChanged" id="z1Y-j0-55L"/>
+                                </connections>
+                            </segmentedControl>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YoL-b5-Yqb">
+                                <rect key="frame" x="0.0" y="114" width="375" height="504"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YoL-b5-Yqb" firstAttribute="top" secondItem="zgX-Dd-wXi" secondAttribute="bottom" constant="10" id="5iv-B4-z4u"/>
+                            <constraint firstAttribute="trailing" secondItem="YoL-b5-Yqb" secondAttribute="trailing" id="8BD-Xn-dGw"/>
+                            <constraint firstItem="Jqt-1c-Vpf" firstAttribute="top" secondItem="YoL-b5-Yqb" secondAttribute="bottom" id="AFH-3A-djC"/>
+                            <constraint firstItem="YoL-b5-Yqb" firstAttribute="leading" secondItem="mmb-i8-EHg" secondAttribute="leading" id="GeA-PD-llQ"/>
+                            <constraint firstAttribute="trailing" secondItem="YoL-b5-Yqb" secondAttribute="trailing" id="Hcf-vk-6zT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zgX-Dd-wXi" secondAttribute="trailing" constant="30" id="Jwq-OL-N5b"/>
+                            <constraint firstItem="Jqt-1c-Vpf" firstAttribute="top" secondItem="YoL-b5-Yqb" secondAttribute="bottom" id="O66-6a-zWu"/>
+                            <constraint firstItem="YoL-b5-Yqb" firstAttribute="leading" secondItem="mmb-i8-EHg" secondAttribute="leading" id="Q1w-5F-FhN"/>
+                            <constraint firstItem="YoL-b5-Yqb" firstAttribute="top" secondItem="zgX-Dd-wXi" secondAttribute="bottom" constant="10" id="UWS-tz-lEi"/>
+                            <constraint firstItem="zgX-Dd-wXi" firstAttribute="leading" secondItem="mmb-i8-EHg" secondAttribute="leadingMargin" constant="30" id="WFZ-p2-oec"/>
+                            <constraint firstItem="zgX-Dd-wXi" firstAttribute="top" secondItem="5ga-IT-ial" secondAttribute="bottom" constant="10" id="lrY-nB-Ugv"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ymM-Tq-pEx"/>
+                    <connections>
+                        <outlet property="segmentControl" destination="zgX-Dd-wXi" id="5Vg-0j-S2q"/>
+                        <outlet property="tableView" destination="YoL-b5-Yqb" id="qlu-sk-tiC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mFn-rY-moX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1581.5999999999999" y="224.4377811094453"/>
+        </scene>
+        <!--活动-->
+        <scene sceneID="Zbo-m2-7NM">
+            <objects>
+                <navigationController id="61w-Au-Hn2" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="活动" image="nav_icon_activityl_Selected" selectedImage="nav_icon_activityl_default" id="RUw-5h-ljV"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="TSB-pG-DXS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="0Pe-WO-ENO" kind="relationship" relationship="rootViewController" id="EIe-1L-Xff"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GXs-Dr-zaK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="734" y="961"/>
+        </scene>
+        <!--Activity Controller-->
+        <scene sceneID="WHh-sc-Ddg">
+            <objects>
+                <viewController id="0Pe-WO-ENO" customClass="LCActivityController" customModule="JXLiCai" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bGS-QD-X5L"/>
+                        <viewControllerLayoutGuide type="bottom" id="xrL-zS-SN2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="s3a-H1-eU8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.29413626549999999" green="0.59547695150000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Aml-fO-4ss"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YFr-6R-StD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1582" y="961"/>
+        </scene>
+        <!--我的-->
+        <scene sceneID="G07-fF-1dP">
+            <objects>
+                <navigationController id="zRd-VU-tql" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="我的" image="nav_icon_personall_Selected" selectedImage="nav_icon_personall_default" id="bk3-YS-3DN"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pNo-rJ-Ucb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vYh-RL-QNZ" kind="relationship" relationship="rootViewController" id="QvS-hZ-twB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Ja-Nb-BWS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="735" y="1635"/>
+        </scene>
+        <!--My Controller-->
+        <scene sceneID="ZwC-7c-Rrn">
+            <objects>
+                <viewController id="vYh-RL-QNZ" customClass="LCMyController" customModule="JXLiCai" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2es-h7-cnM"/>
+                        <viewControllerLayoutGuide type="bottom" id="O8g-5y-bnJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BX8-VT-NA4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.34869620200000001" green="0.41855227950000001" blue="0.11766648289999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="cO5-sC-QcJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VbE-MC-k0N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1583" y="1635"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="nav_icon_activityl_Selected" width="19" height="22"/>
+        <image name="nav_icon_activityl_default" width="19" height="22"/>
+        <image name="nav_icon_financial_Selected" width="19" height="22"/>
+        <image name="nav_icon_financial_default" width="19" height="22"/>
+        <image name="nav_icon_home_Selected" width="19" height="22"/>
+        <image name="nav_icon_home_default" width="19" height="22"/>
+        <image name="nav_icon_personall_Selected" width="20" height="22"/>
+        <image name="nav_icon_personall_default" width="20" height="22"/>
+    </resources>
+</document>
