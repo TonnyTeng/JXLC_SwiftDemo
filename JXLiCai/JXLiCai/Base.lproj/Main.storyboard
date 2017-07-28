@@ -33,7 +33,7 @@
         <!--首页-->
         <scene sceneID="g7g-9J-vfT">
             <objects>
-                <navigationController id="5nP-yb-T3d" sceneMemberID="viewController">
+                <navigationController id="5nP-yb-T3d" customClass="XTNaviagtionController" customModule="JXLiCai" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="首页" image="nav_icon_home_Selected" selectedImage="nav_icon_home_default" id="BPC-mu-wRK"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="4oz-yG-qs6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -69,7 +69,7 @@
         <!--理财-->
         <scene sceneID="hkg-8B-i0l">
             <objects>
-                <navigationController id="We9-dE-rh0" sceneMemberID="viewController">
+                <navigationController id="We9-dE-rh0" customClass="XTNaviagtionController" customModule="JXLiCai" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="理财" image="nav_icon_financial_Selected" selectedImage="nav_icon_financial_default" id="p6r-m7-qHG"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="O1y-bS-dea">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -143,7 +143,7 @@
         <!--活动-->
         <scene sceneID="Zbo-m2-7NM">
             <objects>
-                <navigationController id="61w-Au-Hn2" sceneMemberID="viewController">
+                <navigationController id="61w-Au-Hn2" customClass="XTNaviagtionController" customModule="JXLiCai" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="活动" image="nav_icon_activityl_Selected" selectedImage="nav_icon_activityl_default" id="RUw-5h-ljV"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="TSB-pG-DXS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -179,7 +179,7 @@
         <!--我的-->
         <scene sceneID="G07-fF-1dP">
             <objects>
-                <navigationController id="zRd-VU-tql" sceneMemberID="viewController">
+                <navigationController id="zRd-VU-tql" customClass="XTNaviagtionController" customModule="JXLiCai" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="我的" image="nav_icon_personall_Selected" selectedImage="nav_icon_personall_default" id="bk3-YS-3DN"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="pNo-rJ-Ucb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>

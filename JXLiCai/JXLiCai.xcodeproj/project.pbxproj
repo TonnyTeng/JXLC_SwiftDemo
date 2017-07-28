@@ -25,6 +25,7 @@
 		062CD53D1F025178007833B0 /* LCFinancialController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062CD53C1F025178007833B0 /* LCFinancialController.swift */; };
 		062CD53F1F025190007833B0 /* LCActivityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062CD53E1F025190007833B0 /* LCActivityController.swift */; };
 		062CD5411F02519B007833B0 /* LCMyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062CD5401F02519B007833B0 /* LCMyController.swift */; };
+		063438E51F2B27B600A6C4C5 /* LCClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063438E41F2B27B600A6C4C5 /* LCClient.swift */; };
 		063EACB31F0A35840043D78C /* CycleScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063EACB21F0A35840043D78C /* CycleScrollView.swift */; };
 		063EACB51F0A362B0043D78C /* Proxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063EACB41F0A362B0043D78C /* Proxy.swift */; };
 		063EACB71F0A467A0043D78C /* CycleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063EACB61F0A467A0043D78C /* CycleCell.swift */; };
@@ -77,6 +78,7 @@
 		062CD53C1F025178007833B0 /* LCFinancialController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCFinancialController.swift; sourceTree = "<group>"; };
 		062CD53E1F025190007833B0 /* LCActivityController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCActivityController.swift; sourceTree = "<group>"; };
 		062CD5401F02519B007833B0 /* LCMyController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCMyController.swift; sourceTree = "<group>"; };
+		063438E41F2B27B600A6C4C5 /* LCClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCClient.swift; sourceTree = "<group>"; };
 		063EACB21F0A35840043D78C /* CycleScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CycleScrollView.swift; sourceTree = "<group>"; };
 		063EACB41F0A362B0043D78C /* Proxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Proxy.swift; sourceTree = "<group>"; };
 		063EACB61F0A467A0043D78C /* CycleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CycleCell.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 				062CD52A1F02284F007833B0 /* My */,
 				062CD52D1F0228C8007833B0 /* Common */,
 				062CD52B1F022865007833B0 /* Config */,
+				063438E31F2B279E00A6C4C5 /* Model */,
 				062CD52C1F022877007833B0 /* API */,
 				062CD4FD1F020877007833B0 /* Main.storyboard */,
 				062CD5001F020877007833B0 /* Assets.xcassets */,
@@ -278,6 +281,14 @@
 				B5236B59858B161130288DFC /* Pods_JXLiCai.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		063438E31F2B279E00A6C4C5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				063438E41F2B27B600A6C4C5 /* LCClient.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		063EACAF1F0A249A0043D78C /* View */ = {
@@ -508,6 +519,7 @@
 				06765BA21F0F588100B697F0 /* PushViewController.swift in Sources */,
 				06161E741F29D9620027E38F /* XTTabBarController.swift in Sources */,
 				061A2A641F0357E800B9711C /* HeaderView.swift in Sources */,
+				063438E51F2B27B600A6C4C5 /* LCClient.swift in Sources */,
 				062CD53B1F02514E007833B0 /* LCHomeController.swift in Sources */,
 				062CD5381F023373007833B0 /* XTTableViewController.swift in Sources */,
 				063EACB51F0A362B0043D78C /* Proxy.swift in Sources */,

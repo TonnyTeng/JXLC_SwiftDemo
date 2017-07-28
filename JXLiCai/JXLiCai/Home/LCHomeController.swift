@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 enum CompassPoint{
 
     case north
@@ -32,7 +31,6 @@ class LCHomeController: XTViewController {
     var scrollView = UIScrollView()
     var cycleScrollView:CycleScrollView?
     
-    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated);
         self.navigationController?.setNavigationBarHidden(true, animated: false);
@@ -40,10 +38,8 @@ class LCHomeController: XTViewController {
             
             cycleScrollView!.reloadData()
         }
-//        if self.hidesBottomBarWhenPushed {
-//            
-//            self.hidesBottomBarWhenPushed = false;
-//        }
+
+        
     }
     
     override func viewWillDisappear(_ animated: Bool) {

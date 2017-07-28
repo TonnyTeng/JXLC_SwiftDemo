@@ -44,7 +44,9 @@ class LCLoginController: UIViewController {
     @IBAction func loginAction(_ sender: UIButton) {
         
         NSLog("loginAction")
+        
         self.navigationController?.popViewController(animated: true);
+//        self.hidesBottomBarWhenPushed = false;
     }
     @IBAction func forgotPassWordAction(_ sender: UIButton) {
         
