@@ -73,11 +73,16 @@ class LCHomeController: XTViewController {
     
     func configTopButton() {
         
-//        for var index:Int = 0 in 0...3 {
-//            
-//            
-//            
-//        }
+        let space:Float = 15
+//        let buttonWidth = (width - space * 2) / 4.0
+        
+        for i in 0..<3 {
+            
+            
+            
+            
+            
+        }
     }
     
     override func didReceiveMemoryWarning() {
