@@ -68,7 +68,16 @@ class LCHomeController: XTViewController {
         scrollView.addSubview(cycleScrollView!)
         
         self.login(isLogin: true);
+        self.configTopButton()
+    }
+    
+    func configTopButton() {
         
+//        for var index:Int = 0 in 0...3 {
+//            
+//            
+//            
+//        }
     }
     
     override func didReceiveMemoryWarning() {

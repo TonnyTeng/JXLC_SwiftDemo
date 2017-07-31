@@ -25,7 +25,7 @@ class LCLoginController: UIViewController {
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated);
-        self.navigationController?.setNavigationBarHidden(false, animated: false);
+        self.navigationController?.setNavigationBarHidden(false, animated: true);
         
     }
     
@@ -51,6 +51,9 @@ class LCLoginController: UIViewController {
     @IBAction func forgotPassWordAction(_ sender: UIButton) {
         
         NSLog("forgotPassWordAction")
+        let passWordVC = LCPassWordController.init(nibName: "LCPassWordController", bundle: Bundle.main)
+        
+        self.navigationController?.pushViewController(passWordVC, animated: true)
     }
     @IBAction func registerAction(_ sender: UIButton) {
         
@@ -75,10 +78,6 @@ class LCLoginController: UIViewController {
         telTextField.resignFirstResponder();
         passWordTextField.resignFirstResponder();
     }
-    
-    
-    
-    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
