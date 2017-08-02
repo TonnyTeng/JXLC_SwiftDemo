@@ -19,4 +19,6 @@
 import LCClient
 
 
+#define  kUIFont(x)  UIFont.systemFont(ofSize: x)
+
 #endif /* PrefixHeader_pch */

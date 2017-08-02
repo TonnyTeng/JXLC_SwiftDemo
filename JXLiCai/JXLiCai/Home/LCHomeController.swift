@@ -39,7 +39,6 @@ class LCHomeController: XTViewController {
             cycleScrollView!.reloadData()
         }
 
-        
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -52,10 +51,22 @@ class LCHomeController: XTViewController {
         super.viewDidLoad()
         self.title = "首页";
         
-        scrollView = UIScrollView.init(frame: CGRect(x:0,y:0,width:width,height:height - 49))
-        view .addSubview(scrollView)
+        self.login(isLogin: true);
+        self.configBackgroundView();
+        self.configTopScrollView();
+        self.configTopButton()
+    }
+    //UI
+    func configBackgroundView(){
         
-//        let cycleHeight = 520 * width / 1080.0
+        scrollView = UIScrollView.init(frame: CGRect(x:0,y:0,width:width,height:height - 49))
+        //        scrollView.contentSize = CGSize(width:width,height:height + 100);
+        view .addSubview(scrollView)
+    }
+    
+    func configTopScrollView() {
+        
+        //        let cycleHeight = 520 * width / 1080.0
         let frame = CGRect(x: 0, y: 0, width: width, height: cycleHeight)
         let serverImages = ["http://p.lrlz.com/data/upload/mobile/special/s252/s252_05471521705899113.png",
                             "http://p.lrlz.com/data/upload/mobile/special/s303/s303_05442007678060723.png",
@@ -66,23 +77,36 @@ class LCHomeController: XTViewController {
         cycleScrollView = CycleScrollView(frame: frame, type: .SERVICE, imgs: serverImages)
         cycleScrollView?.delegate = self
         scrollView.addSubview(cycleScrollView!)
-        
-        self.login(isLogin: true);
-        self.configTopButton()
     }
     
     func configTopButton() {
         
-        let space:Float = 15
-//        let buttonWidth = (width - space * 2) / 4.0
+        let space:CGFloat = 15
+        let buttonWidth = (width - space * 2) / 4.0
+        let titleArray = ["福惠宝","祥和宝","财充盈","实惠宝"];
+        let imageArray = ["FuHui treasure","Auspicious treasure","Goods with","Affordable treasure"];
         
-        for i in 0..<3 {
+        for i in 0..<4 {
             
-            
-            
-            
-            
+            let originX = space + buttonWidth * CGFloat(i);
+            let originY = (cycleScrollView?.frame.size.height)! + (cycleScrollView?.frame.origin.y)!;
+            let button = UIButton.init(frame: CGRect(x:originX,y:originY,width:buttonWidth,height:buttonWidth))
+            button.setTitle(titleArray[i], for: UIControlState.normal);
+            button.setTitleColor(UIColor.black, for: UIControlState.normal);
+            button.titleLabel?.font = UIFont.systemFont(ofSize: 16);
+            button.setImage(UIImage.init(named: imageArray[i]), for: UIControlState.normal);
+            button .imageEdgeInsets = UIEdgeInsets.init(top: -(button.titleLabel?.intrinsicContentSize.height)!, left: 0, bottom: 0, right: -(button.titleLabel?.intrinsicContentSize.width)!);
+            button .titleEdgeInsets = UIEdgeInsets.init(top: (button.currentImage?.size.height)! + 10.0, left: -(button.currentImage?.size.width)!+10.0, bottom: 0, right: 0)
+            button.tag = 100 + i;
+            button.addTarget(self, action: #selector(showAction(_:)), for: UIControlEvents.touchUpInside);
+            scrollView.addSubview(button);
         }
+    }
+    
+    //Action
+    func showAction(_ button:UIButton) {
+        
+        NSLog("点击了:\(button.titleLabel?.text)");
     }
     
     override func didReceiveMemoryWarning() {
