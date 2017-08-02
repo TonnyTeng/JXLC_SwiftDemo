@@ -61,6 +61,7 @@ class LCHomeController: XTViewController {
         
         scrollView = UIScrollView.init(frame: CGRect(x:0,y:0,width:width,height:height - 49))
         //        scrollView.contentSize = CGSize(width:width,height:height + 100);
+        scrollView.backgroundColor = UIColor.white;
         view .addSubview(scrollView)
     }
     
