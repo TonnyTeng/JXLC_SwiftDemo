@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		061079741F2EDD410031EE34 /* LCPassWordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061079721F2EDD410031EE34 /* LCPassWordController.swift */; };
-		061079751F2EDD410031EE34 /* LCPassWordController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 061079731F2EDD410031EE34 /* LCPassWordController.xib */; };
 		06161E711F29D2260027E38F /* LCLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06161E6F1F29D2260027E38F /* LCLoginController.swift */; };
 		06161E721F29D2260027E38F /* LCLoginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06161E701F29D2260027E38F /* LCLoginController.xib */; };
 		06161E741F29D9620027E38F /* XTTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06161E731F29D9620027E38F /* XTTabBarController.swift */; };
@@ -58,7 +57,7 @@
 
 /* Begin PBXFileReference section */
 		061079721F2EDD410031EE34 /* LCPassWordController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCPassWordController.swift; sourceTree = "<group>"; };
-		061079731F2EDD410031EE34 /* LCPassWordController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LCPassWordController.xib; sourceTree = "<group>"; };
+		06138BD51F32F10F0065D438 /* LXConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXConfig.h; sourceTree = "<group>"; };
 		06161E6F1F29D2260027E38F /* LCLoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCLoginController.swift; sourceTree = "<group>"; };
 		06161E701F29D2260027E38F /* LCLoginController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LCLoginController.xib; sourceTree = "<group>"; };
 		06161E731F29D9620027E38F /* XTTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XTTabBarController.swift; sourceTree = "<group>"; };
@@ -127,10 +126,17 @@
 		0610796F1F2EDCC30031EE34 /* PassWord */ = {
 			isa = PBXGroup;
 			children = (
+				06138BD61F32FA3D0065D438 /* View */,
 				061079721F2EDD410031EE34 /* LCPassWordController.swift */,
-				061079731F2EDD410031EE34 /* LCPassWordController.xib */,
 			);
 			path = PassWord;
+			sourceTree = "<group>";
+		};
+		06138BD61F32FA3D0065D438 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		06161E6C1F29D1AE0027E38F /* Login */ = {
@@ -264,6 +270,7 @@
 			isa = PBXGroup;
 			children = (
 				062CD5391F0233B7007833B0 /* PrefixHeader.pch */,
+				06138BD51F32F10F0065D438 /* LXConfig.h */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -463,7 +470,6 @@
 				063438E91F2B36FA00A6C4C5 /* LCRegisterController.xib in Resources */,
 				06161E721F29D2260027E38F /* LCLoginController.xib in Resources */,
 				062CD4FF1F020877007833B0 /* Main.storyboard in Resources */,
-				061079751F2EDD410031EE34 /* LCPassWordController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

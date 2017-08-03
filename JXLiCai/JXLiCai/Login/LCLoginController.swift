@@ -51,7 +51,7 @@ class LCLoginController: UIViewController {
     @IBAction func forgotPassWordAction(_ sender: UIButton) {
         
         NSLog("forgotPassWordAction")
-        let passWordVC = LCPassWordController.init(nibName: "LCPassWordController", bundle: Bundle.main)
+        let passWordVC = LCPassWordController.init();
         
         self.navigationController?.pushViewController(passWordVC, animated: true)
     }
