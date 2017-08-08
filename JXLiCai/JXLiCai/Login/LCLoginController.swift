@@ -39,6 +39,8 @@ class LCLoginController: UIViewController {
         
         loginButton.layer.cornerRadius = 4;
         telTextField.keyboardType = UIKeyboardType.numberPad;
+        telTextField.clearButtonMode = UITextFieldViewMode.whileEditing;
+        passWordTextField.clearButtonMode = UITextFieldViewMode.whileEditing;
     }
 
     @IBAction func loginAction(_ sender: UIButton) {
@@ -66,6 +68,15 @@ class LCLoginController: UIViewController {
     @IBAction func showStatusPassWordAction(_ sender: UIButton) {
         
          NSLog("showStatusPassWordAction")
+        sender.isSelected = !sender.isSelected;
+        passWordTextField.isSecureTextEntry = !sender.isSelected;
+        if (!sender.isSelected) {
+            
+            sender.setImage(UIImage.init(named: "icon_Shut"), for: UIControlState.normal);
+        }else{
+            
+            sender.setImage(UIImage.init(named: "icon_open"), for: UIControlState.normal);
+        }
         
     }
     @IBAction func showTelListAction(_ sender: UIButton) {

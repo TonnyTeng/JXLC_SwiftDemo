@@ -29,6 +29,7 @@ class LCRegisterController: XTViewController {
         if self.timer != nil{
             
             self.timer.invalidate()
+            self.timer = nil;
         }
     }
     override func viewDidLoad() {
@@ -43,6 +44,8 @@ class LCRegisterController: XTViewController {
         registerButton.layer.cornerRadius = 4;
         telTextField.keyboardType = UIKeyboardType.numberPad;
         verificationTextField.keyboardType = UIKeyboardType.numberPad;
+        telTextField.clearButtonMode = UITextFieldViewMode.whileEditing;
+        verificationTextField.clearButtonMode = UITextFieldViewMode.whileEditing;
     }
 
     func startTimer(){

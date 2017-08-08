@@ -17,8 +17,10 @@ class LCActivityDetailController: PushViewController {
         adImageView = UIImageView.init(frame: CGRect(x:0,y:64 ,width:width,height:height - 64))
         adImageView.image = UIImage(named:"detail")
         view .addSubview(adImageView)
+        
     }
 
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

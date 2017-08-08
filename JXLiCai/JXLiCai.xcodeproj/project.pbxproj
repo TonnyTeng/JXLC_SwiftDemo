@@ -13,6 +13,7 @@
 		06161E741F29D9620027E38F /* XTTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06161E731F29D9620027E38F /* XTTabBarController.swift */; };
 		061A2A641F0357E800B9711C /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061A2A631F0357E800B9711C /* HeaderView.swift */; };
 		061A2A661F038C3800B9711C /* MyMoneyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061A2A651F038C3800B9711C /* MyMoneyView.swift */; };
+		061D8DE51F398B6500B1B5F6 /* FindPassWordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061D8DE41F398B6500B1B5F6 /* FindPassWordCell.swift */; };
 		062CD4FA1F020877007833B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062CD4F91F020877007833B0 /* AppDelegate.swift */; };
 		062CD4FF1F020877007833B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 062CD4FD1F020877007833B0 /* Main.storyboard */; };
 		062CD5011F020877007833B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 062CD5001F020877007833B0 /* Assets.xcassets */; };
@@ -63,6 +64,7 @@
 		06161E731F29D9620027E38F /* XTTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XTTabBarController.swift; sourceTree = "<group>"; };
 		061A2A631F0357E800B9711C /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		061A2A651F038C3800B9711C /* MyMoneyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyMoneyView.swift; sourceTree = "<group>"; };
+		061D8DE41F398B6500B1B5F6 /* FindPassWordCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindPassWordCell.swift; sourceTree = "<group>"; };
 		062CD4F61F020877007833B0 /* JXLiCai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JXLiCai.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		062CD4F91F020877007833B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		062CD4FE1F020877007833B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 		06138BD61F32FA3D0065D438 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				061D8DE41F398B6500B1B5F6 /* FindPassWordCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -551,6 +554,7 @@
 				062CD53B1F02514E007833B0 /* LCHomeController.swift in Sources */,
 				062CD5381F023373007833B0 /* XTTableViewController.swift in Sources */,
 				063EACB51F0A362B0043D78C /* Proxy.swift in Sources */,
+				061D8DE51F398B6500B1B5F6 /* FindPassWordCell.swift in Sources */,
 				063438E81F2B36FA00A6C4C5 /* LCRegisterController.swift in Sources */,
 				06765B9E1F0F283900B697F0 /* ActivityListCell.swift in Sources */,
 				062CD53D1F025178007833B0 /* LCFinancialController.swift in Sources */,
