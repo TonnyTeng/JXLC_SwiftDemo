@@ -190,7 +190,7 @@ extension LCMyController: UITableViewDelegate, UITableViewDataSource {
                 
                     let button = UIButton.init(frame: CGRect(x:(buttonWidth + CGFloat(Float(index))) * CGFloat(Float(index)),y:0,width:buttonWidth,height:width/3));
                     button.setTitle(titleArray[index], for: UIControlState.normal);
-                    button.titleLabel?.font = UIFont.systemFont(ofSize: 16);
+                    button.titleLabel?.font = UIFont.kTitleFont();
                     button.setTitleColor(UIColor.black, for: UIControlState.normal);
                     button.setImage(UIImage(named:imageArray[index]), for: UIControlState.normal);
                     

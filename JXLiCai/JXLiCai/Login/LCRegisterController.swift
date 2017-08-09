@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import ZKProgressHUD
+import Alamofire
+
 
 class LCRegisterController: XTViewController {
 
@@ -46,6 +49,7 @@ class LCRegisterController: XTViewController {
         verificationTextField.keyboardType = UIKeyboardType.numberPad;
         telTextField.clearButtonMode = UITextFieldViewMode.whileEditing;
         verificationTextField.clearButtonMode = UITextFieldViewMode.whileEditing;
+        
     }
 
     func startTimer(){
@@ -88,14 +92,25 @@ class LCRegisterController: XTViewController {
     
     @IBAction func registerAction(_ sender: UIButton) {
         
+        NSLog("手机号：\(telTextField.text)")
+        NSLog("验证码：\(verificationTextField.text)")
+        NSLog("登录密码：\(passwordTextField.text)")
+        ZKProgressHUD.show("正在拼命的加载中🏃🏃🏃")
+        DispatchQueue.global().asyncAfter(deadline: DispatchTime.now() + .seconds(3), execute: {
+            DispatchQueue.main.async {
+                ZKProgressHUD.dismiss()
+                 self.navigationController?.popToRootViewController(animated: true);
+            }
+        })
         
-        NSLog("registerAction");
-        self.navigationController?.popToRootViewController(animated: true);
+       
     }
     
     @IBAction func showDelegateAction(_ sender: UIButton) {
         
          NSLog("showDelegateAction");
+        
+        
         
     }
     override func didReceiveMemoryWarning() {
@@ -103,6 +118,18 @@ class LCRegisterController: XTViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-
 }
+
+extension LCRegisterController:UITextFieldDelegate{
+
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+    
+        //限制位数
+        return true;
+    }
+    
+    
+    
+}
+

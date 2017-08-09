@@ -21,21 +21,21 @@ class FindPassWordCell: UITableViewCell {
         
         titleLabel = UILabel.init(frame: CGRect(x:15,y:10,width:100,height:30))
         titleLabel.textColor = UIColor.black
-        titleLabel.font = UIFont.systemFont(ofSize: 14)
+        titleLabel.font = UIFont.kNormalFont()
         self.contentView.addSubview(titleLabel)
         
-        textField = UITextField.init(frame: CGRect(x:130,y:10,width:width - 130 - 120,height:30))
+        textField = UITextField.init(frame: CGRect(x:80,y:10,width:width - 130 - 10,height:30))
         textField.textColor = UIColor.black
         textField.clearButtonMode = UITextFieldViewMode.whileEditing;
-        textField.font = UIFont.systemFont(ofSize: 14)
+        textField.font = UIFont.kNormalFont()
         self.contentView.addSubview(textField)
         
         subButton = UIButton.init(frame: CGRect(x:width - 125,y:10,width:110,height:30))
         subButton.setTitleColor(UIColor.white, for: UIControlState.normal);
         subButton.setTitle("获取验证码", for: UIControlState.normal);
-        subButton.titleLabel?.font = UIFont.systemFont(ofSize: 16);
+        subButton.titleLabel?.font = UIFont.kTitleFont()
         subButton.layer.cornerRadius = 4.0;
-        subButton.backgroundColor = UIColor.init(red: 30/255.0, green: 144/255.0, blue: 255/255.0, alpha: 1);
+        subButton.backgroundColor = UIColor.kMainBlueColor();
         self.contentView.addSubview(subButton)
         
     }

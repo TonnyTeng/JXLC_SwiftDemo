@@ -49,12 +49,10 @@ class LCPassWordController: XTViewController {
     
     func configDataSource() {
         
-        
         dataArray .add(["title":"手 机 号","text":"请输入手机号",          "tag":TAG_TEL]);
         dataArray .add(["title":"验 证 码","text":"请输入您的验证码",       "tag":TAG_CODE]);
         dataArray .add(["title":"登录密码","text":"请设置新的登录密码",      "tag":TAG_PWD]);
-        dataArray .add(["title":"确认密码","text":"请确认您的新登录密码",    "tag":TAG_NPWD]);
-        
+        dataArray .add(["title":"确认密码","text":"请确认您的新登录密码",     "tag":TAG_NPWD]);
     }
     
     func startTimer(){
@@ -183,7 +181,7 @@ extension LCPassWordController: UITableViewDelegate, UITableViewDataSource,UITex
         let button = UIButton.init(frame: CGRect(x:15,y:40,width:width - 30,height:40))
         button.setTitleColor(UIColor.white, for: UIControlState.normal);
         button.setTitle("确定", for: UIControlState.normal);
-        button.titleLabel?.font = UIFont.systemFont(ofSize: 16);
+        button.titleLabel?.font = UIFont.kTitleFont();
         button.layer.cornerRadius = 4.0;
         button.backgroundColor = UIColor.init(red: 30/255.0, green: 144/255.0, blue: 255/255.0, alpha: 1);
         button.addTarget(self, action:#selector(sureAction), for:UIControlEvents.touchUpInside);
@@ -212,6 +210,7 @@ extension LCPassWordController: UITableViewDelegate, UITableViewDataSource,UITex
             if (indexPath.row == 1) {
                 
                 cell?.textField.keyboardType = UIKeyboardType.numberPad;
+                cell?.textField.frame = CGRect(x:80,y:10,width:width - 130 - 70,height:30);
             }else{
             
                 cell?.subButton.setTitle("", for: UIControlState.normal);

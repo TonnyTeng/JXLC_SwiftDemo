@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Alamofire
+import ZKProgressHUD
 
 enum CompassPoint{
 
@@ -55,11 +57,32 @@ class LCHomeController: XTViewController {
         self.configBackgroundView();
         self.configTopScrollView();
         self.configTopButton()
+        
+       /**
+         
+         ZKProgressHUD.show("正在拼命的加载中🏃🏃🏃")
+         Alamofire.request("http://121.40.95.27/mobile/ss/queryClientImg.do?agentId=2000000122&appId=0000", method: .get).responseJSON {
+         
+         response in
+         
+         print(response.request)  // original URL request
+         print(response.response) // HTTP URL response
+         print(response.data)     // server data
+         print(response.result)   // result of response serialization
+         
+         if let JSON = response.result.value {
+         print("JSON: \(JSON)")
+         }
+         ZKProgressHUD.showInfo("加载完成😁😁😁")
+         }
+         
+         */
+        
     }
     //UI
     func configBackgroundView(){
         
-        scrollView = UIScrollView.init(frame: CGRect(x:0,y:0,width:width,height:height - 49))
+        scrollView = UIScrollView.init(frame: CGRect(x:0,y:-20,width:width,height:height - 49 + 20))
         //        scrollView.contentSize = CGSize(width:width,height:height + 100);
         scrollView.backgroundColor = UIColor.white;
         view .addSubview(scrollView)

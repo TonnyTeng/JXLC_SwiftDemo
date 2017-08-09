@@ -51,7 +51,7 @@ class ActivityListCell: UITableViewCell {
         
         typeLabel = UILabel.init(frame: CGRect(x:45,y:15,width:width - 60,height:15))
         typeLabel.textColor = UIColor.black
-        typeLabel.font = UIFont.systemFont(ofSize: 15)
+        typeLabel.font = UIFont.kFont(x: 15)
         whiteView .addSubview(typeLabel)
         
         let heightAdImage = width / 3
@@ -66,18 +66,18 @@ class ActivityListCell: UITableViewCell {
         
         statusLabel = UILabel.init(frame: CGRect(x:15,y:6,width:70,height:15))
         statusLabel.textColor = UIColor.white
-        statusLabel.font = UIFont.systemFont(ofSize: 15)
+        statusLabel.font = UIFont.kFont(x: 15)
         statusImageView .addSubview(statusLabel)
        
         
         titleLabel = UILabel.init(frame: CGRect(x:15,y:adImageView.frame.maxY + 15,width:width - 30,height:20))
         titleLabel.textColor = UIColor.black
-        titleLabel.font = UIFont.systemFont(ofSize: 16)
+        titleLabel.font = UIFont.kTitleFont()
         whiteView .addSubview(titleLabel)
         
         detailLabel = UILabel.init(frame: CGRect(x:15,y:titleLabel.frame.maxY + 5,width:width - 30,height:40))
         detailLabel.textColor = UIColor.black
-        detailLabel.font = UIFont.systemFont(ofSize: 14)
+        detailLabel.font = UIFont.kNormalFont()
         detailLabel.numberOfLines = 0
         whiteView .addSubview(detailLabel)
         
@@ -92,7 +92,7 @@ class ActivityListCell: UITableViewCell {
         
         timeLabel = UILabel.init(frame: CGRect(x:45,y:lineView.frame.maxY + 15,width:width - 80,height:15))
         timeLabel.textColor = UIColor.gray
-        timeLabel.font = UIFont.systemFont(ofSize: 14)
+        timeLabel.font = UIFont.kNormalFont()
         whiteView .addSubview(timeLabel)
         
         moreImageView = UIImageView.init(frame: CGRect(x:width - 15 - 8,y:lineView.frame.maxY + 15,width:8,height:15))

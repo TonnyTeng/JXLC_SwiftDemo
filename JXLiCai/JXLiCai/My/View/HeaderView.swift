@@ -53,7 +53,7 @@ class HeaderView: UIImageView {
         
         telLabel = UILabel.init(frame: CGRect(x:0,y:originY + PortraitWidth + 5,width:width,height:20));
         telLabel.textAlignment = NSTextAlignment.center;
-        telLabel.font = UIFont.systemFont(ofSize: 16);
+        telLabel.font = UIFont.kTitleFont()
         telLabel.textColor = UIColor.white;
         telLabel.text = "15884502959";
         self .addSubview(telLabel);
@@ -69,7 +69,7 @@ class HeaderView: UIImageView {
         allMoneyButton .setImage(UIImage(named:"invisible"), for: UIControlState.selected);
         allMoneyButton .setTitle("资产总计", for: UIControlState.normal);
         allMoneyButton.titleLabel?.textColor = UIColor.white;
-        allMoneyButton.titleLabel?.font = UIFont.systemFont(ofSize: 16);
+        allMoneyButton.titleLabel?.font = UIFont.kTitleFont();
         allMoneyButton .imageEdgeInsets = UIEdgeInsets.init(top:0.0 , left:(allMoneyButton.imageView?.frame.size.width)! + 70.0, bottom: 0.0, right: -(allMoneyButton.titleLabel?.bounds.size.width)!);
         allMoneyButton .titleEdgeInsets = UIEdgeInsets.init(top:0.0 , left: -(allMoneyButton.imageView?.frame.size.width)!, bottom: 0.0, right: (allMoneyButton.imageView?.frame.size.width)!);
         allMoneyButton .addTarget(self, action: #selector(showAction(_:)), for: UIControlEvents.touchUpInside);
@@ -77,7 +77,7 @@ class HeaderView: UIImageView {
         
         moenyLabel = UILabel.init(frame: CGRect(x:0,y:originY_Tel + space / 2.0 + 40,width:width,height:20));
         moenyLabel.textAlignment = NSTextAlignment.center;
-        moenyLabel.font = UIFont.systemFont(ofSize:18);
+        moenyLabel.font = UIFont.kFont(x: 18);
         moenyLabel.textColor = UIColor.white;
         moenyLabel.text = "1231223.00元";
         self .addSubview(moenyLabel);

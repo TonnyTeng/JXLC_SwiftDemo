@@ -15,8 +15,8 @@ class LCFinancialController: XTViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "理财";
-        // Do any additional setup after loading the view.
         
+        self.hiddenLeftButtonItem();
         //判断当前设备是否支持距离传感器
         if UIDevice.current.isProximityMonitoringEnabled {
             //            设备支持距离传感器

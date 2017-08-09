@@ -28,14 +28,14 @@ class MyMoneyView: UIImageView {
         
         useTitleLabel = UILabel.init(frame: CGRect(x:0,y:height/2 - 23.0 ,width:width/2,height:20));
         useTitleLabel.textAlignment = NSTextAlignment.center;
-        useTitleLabel.font = UIFont.systemFont(ofSize: 16);
+        useTitleLabel.font = UIFont.kTitleFont();
         useTitleLabel.textColor = UIColor.white;
         useTitleLabel.text = "可用余额";
         self .addSubview(useTitleLabel);
         
         useCountLabel = UILabel.init(frame: CGRect(x:0,y:height/2+3 ,width:width/2,height:20));
         useCountLabel.textAlignment = NSTextAlignment.center;
-        useCountLabel.font = UIFont.systemFont(ofSize: 18);
+        useCountLabel.font = UIFont.kFont(x: 18);
         useCountLabel.textColor = UIColor.white;
        
         self .addSubview(useCountLabel);
@@ -43,14 +43,14 @@ class MyMoneyView: UIImageView {
         
         allTitleLabel = UILabel.init(frame: CGRect(x:width/2,y:height/2 - 23.0 ,width:width/2,height:20));
         allTitleLabel.textAlignment = NSTextAlignment.center;
-        allTitleLabel.font = UIFont.systemFont(ofSize: 16);
+        allTitleLabel.font = UIFont.kTitleFont();
         allTitleLabel.textColor = UIColor.white;
         allTitleLabel.text = "累计收益";
         self .addSubview(allTitleLabel);
         
         allCountLabel = UILabel.init(frame: CGRect(x:width/2,y:height/2+3 ,width:width/2,height:20));
         allCountLabel.textAlignment = NSTextAlignment.center;
-        allCountLabel.font = UIFont.systemFont(ofSize: 18);
+        allCountLabel.font = UIFont.kFont(x: 18);
         allCountLabel.textColor = UIColor.white;
        
         self .addSubview(allCountLabel);

@@ -33,6 +33,8 @@
 		063EACB31F0A35840043D78C /* CycleScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063EACB21F0A35840043D78C /* CycleScrollView.swift */; };
 		063EACB51F0A362B0043D78C /* Proxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063EACB41F0A362B0043D78C /* Proxy.swift */; };
 		063EACB71F0A467A0043D78C /* CycleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063EACB61F0A467A0043D78C /* CycleCell.swift */; };
+		064723EA1F3B0CE000E47DA9 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064723E91F3B0CE000E47DA9 /* Extensions.swift */; };
+		064723EE1F3B13AD00E47DA9 /* JXLCAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064723ED1F3B13AD00E47DA9 /* JXLCAPI.swift */; };
 		06765B9E1F0F283900B697F0 /* ActivityListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06765B9D1F0F283900B697F0 /* ActivityListCell.swift */; };
 		06765BA01F0F563400B697F0 /* LCActivityDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06765B9F1F0F563400B697F0 /* LCActivityDetailController.swift */; };
 		06765BA21F0F588100B697F0 /* PushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06765BA11F0F588100B697F0 /* PushViewController.swift */; };
@@ -58,7 +60,6 @@
 
 /* Begin PBXFileReference section */
 		061079721F2EDD410031EE34 /* LCPassWordController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCPassWordController.swift; sourceTree = "<group>"; };
-		06138BD51F32F10F0065D438 /* LXConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXConfig.h; sourceTree = "<group>"; };
 		06161E6F1F29D2260027E38F /* LCLoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCLoginController.swift; sourceTree = "<group>"; };
 		06161E701F29D2260027E38F /* LCLoginController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LCLoginController.xib; sourceTree = "<group>"; };
 		06161E731F29D9620027E38F /* XTTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XTTabBarController.swift; sourceTree = "<group>"; };
@@ -80,7 +81,6 @@
 		062CD5331F023347007833B0 /* XTViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XTViewController.swift; sourceTree = "<group>"; };
 		062CD5351F023365007833B0 /* XTNaviagtionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XTNaviagtionController.swift; sourceTree = "<group>"; };
 		062CD5371F023373007833B0 /* XTTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XTTableViewController.swift; sourceTree = "<group>"; };
-		062CD5391F0233B7007833B0 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		062CD53A1F02514E007833B0 /* LCHomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCHomeController.swift; sourceTree = "<group>"; };
 		062CD53C1F025178007833B0 /* LCFinancialController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCFinancialController.swift; sourceTree = "<group>"; };
 		062CD53E1F025190007833B0 /* LCActivityController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCActivityController.swift; sourceTree = "<group>"; };
@@ -91,6 +91,8 @@
 		063EACB21F0A35840043D78C /* CycleScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CycleScrollView.swift; sourceTree = "<group>"; };
 		063EACB41F0A362B0043D78C /* Proxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Proxy.swift; sourceTree = "<group>"; };
 		063EACB61F0A467A0043D78C /* CycleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CycleCell.swift; sourceTree = "<group>"; };
+		064723E91F3B0CE000E47DA9 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		064723ED1F3B13AD00E47DA9 /* JXLCAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXLCAPI.swift; sourceTree = "<group>"; };
 		06765B9D1F0F283900B697F0 /* ActivityListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityListCell.swift; sourceTree = "<group>"; };
 		06765B9F1F0F563400B697F0 /* LCActivityDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCActivityDetailController.swift; sourceTree = "<group>"; };
 		06765BA11F0F588100B697F0 /* PushViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushViewController.swift; sourceTree = "<group>"; };
@@ -202,7 +204,6 @@
 				062CD5271F02284F007833B0 /* Activity */,
 				062CD52A1F02284F007833B0 /* My */,
 				062CD52D1F0228C8007833B0 /* Common */,
-				062CD52B1F022865007833B0 /* Config */,
 				063438E31F2B279E00A6C4C5 /* Model */,
 				062CD52C1F022877007833B0 /* API */,
 				062CD4FD1F020877007833B0 /* Main.storyboard */,
@@ -269,18 +270,10 @@
 			path = My;
 			sourceTree = "<group>";
 		};
-		062CD52B1F022865007833B0 /* Config */ = {
-			isa = PBXGroup;
-			children = (
-				062CD5391F0233B7007833B0 /* PrefixHeader.pch */,
-				06138BD51F32F10F0065D438 /* LXConfig.h */,
-			);
-			path = Config;
-			sourceTree = "<group>";
-		};
 		062CD52C1F022877007833B0 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				064723ED1F3B13AD00E47DA9 /* JXLCAPI.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -289,6 +282,7 @@
 			isa = PBXGroup;
 			children = (
 				062CD52E1F0228E7007833B0 /* Base */,
+				064723E91F3B0CE000E47DA9 /* Extensions.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -545,8 +539,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				064723EA1F3B0CE000E47DA9 /* Extensions.swift in Sources */,
 				063EACB71F0A467A0043D78C /* CycleCell.swift in Sources */,
 				062CD5411F02519B007833B0 /* LCMyController.swift in Sources */,
+				064723EE1F3B13AD00E47DA9 /* JXLCAPI.swift in Sources */,
 				06765BA21F0F588100B697F0 /* PushViewController.swift in Sources */,
 				06161E741F29D9620027E38F /* XTTabBarController.swift in Sources */,
 				061A2A641F0357E800B9711C /* HeaderView.swift in Sources */,

@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import ZKProgressHUD
+
 
 class LCLoginController: UIViewController {
 
@@ -46,8 +48,17 @@ class LCLoginController: UIViewController {
     @IBAction func loginAction(_ sender: UIButton) {
         
         NSLog("loginAction")
+        ZKProgressHUD.show("正在拼命的加载中🏃🏃🏃")
+        DispatchQueue.global().asyncAfter(deadline: DispatchTime.now() + .seconds(3), execute: {
+            DispatchQueue.main.async {
+                ZKProgressHUD.dismiss()
+                self.navigationController?.popViewController(animated: true);
+                //                ZKProgressHUD.showInfo("加载完成😁😁😁")
+//                ZKProgressHUD.showSuccess("操作成功👏👏👏")
+            }
+        })
         
-        self.navigationController?.popViewController(animated: true);
+        
 //        self.hidesBottomBarWhenPushed = false;
     }
     @IBAction func forgotPassWordAction(_ sender: UIButton) {

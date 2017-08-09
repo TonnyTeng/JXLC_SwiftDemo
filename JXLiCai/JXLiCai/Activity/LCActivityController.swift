@@ -34,8 +34,7 @@ class LCActivityController: XTViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "活动列表";
-        
-        
+        self.hiddenLeftButtonItem();
         self .configDataSource();
         self.automaticallyAdjustsScrollViewInsets = false;
         tableView = UITableView.init(frame: CGRect(x:0,y:64,width:width,height:height - 64 - 49), style:UITableViewStyle.grouped);
