@@ -99,7 +99,8 @@ class LCRegisterController: XTViewController {
         DispatchQueue.global().asyncAfter(deadline: DispatchTime.now() + .seconds(3), execute: {
             DispatchQueue.main.async {
                 ZKProgressHUD.dismiss()
-                 self.navigationController?.popToRootViewController(animated: true);
+                self.navigationController?.popViewController(animated: true);
+//                 self.navigationController?.popToRootViewController(animated: true);
             }
         })
         

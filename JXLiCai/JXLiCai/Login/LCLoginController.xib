@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LCLoginController" customModule="JXLiCai" customModuleProvider="target">
             <connections>
+                <outlet property="backButton" destination="mXm-ni-q83" id="5nN-Jk-31X"/>
                 <outlet property="loginButton" destination="t7K-5P-P9V" id="Tts-iz-D2e"/>
                 <outlet property="passWordButton" destination="Whw-3T-nQW" id="SUr-yB-zUS"/>
                 <outlet property="passWordTextField" destination="i5n-f9-4nE" id="2at-bl-9LO"/>
@@ -221,10 +222,22 @@
                         <constraint firstAttribute="height" constant="39" id="hmD-RH-vEB"/>
                     </constraints>
                 </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mXm-ni-q83">
+                    <rect key="frame" x="0.0" y="20" width="60" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="aM9-xa-nE1"/>
+                        <constraint firstAttribute="height" constant="30" id="oz2-S8-FaV"/>
+                    </constraints>
+                    <state key="normal" image="go_back"/>
+                    <connections>
+                        <action selector="backAction:" destination="-1" eventType="touchUpInside" id="0rM-g2-b1H"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="BRM-7n-O4k" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="13M-dX-zh7"/>
+                <constraint firstItem="mXm-ni-q83" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="35y-Wt-eF6"/>
                 <constraint firstAttribute="bottom" secondItem="BRM-7n-O4k" secondAttribute="bottom" id="42V-T3-42I"/>
                 <constraint firstItem="CGx-V9-Bwv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="4rO-or-LI2"/>
                 <constraint firstAttribute="trailing" secondItem="rU9-rM-MDt" secondAttribute="trailing" constant="15" id="8HL-Gn-5Ku"/>
@@ -245,12 +258,14 @@
                 <constraint firstItem="bIs-dh-hm2" firstAttribute="top" secondItem="t7K-5P-P9V" secondAttribute="bottom" constant="12" id="nl1-g7-gjQ"/>
                 <constraint firstItem="CGx-V9-Bwv" firstAttribute="top" secondItem="UD7-le-pJC" secondAttribute="bottom" constant="20" id="wID-Hy-o3s"/>
                 <constraint firstItem="UD7-le-pJC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="wj4-EF-x7b"/>
+                <constraint firstItem="mXm-ni-q83" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="wnD-t8-Ikp"/>
                 <constraint firstAttribute="trailing" secondItem="t7K-5P-P9V" secondAttribute="trailing" constant="30" id="zFd-6m-KwR"/>
             </constraints>
             <point key="canvasLocation" x="34.5" y="53.5"/>
         </view>
     </objects>
     <resources>
+        <image name="go_back" width="10" height="18"/>
         <image name="icon_Shut" width="13" height="5"/>
         <image name="icon_down" width="11" height="6"/>
         <image name="icon_password" width="12" height="16"/>

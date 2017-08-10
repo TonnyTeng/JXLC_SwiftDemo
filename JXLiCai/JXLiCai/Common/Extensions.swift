@@ -10,6 +10,7 @@ import UIKit
 
 class Extensions: NSObject {
 
+    
 }
 
 
@@ -34,6 +35,11 @@ extension UIColor{
 
 extension UIFont{
 
+    class func kBFont(x:CGFloat) -> UIFont {
+        
+        return UIFont.boldSystemFont(ofSize:CGFloat(x));
+    }
+    
     class func kFont(x:CGFloat) -> UIFont {
         
         return UIFont.systemFont(ofSize: CGFloat(x));
@@ -55,3 +61,16 @@ extension UIFont{
     }
     
 }
+//
+//extension UIViewController{
+//
+//    class func kWidth() ->CGFloat {
+//        
+//        return UIScreen.main.bounds.size.width;
+//    }
+//   
+//    class func kHeight() ->CGFloat {
+//        
+//        return UIScreen.main.bounds.size.height;
+//    }
+//}

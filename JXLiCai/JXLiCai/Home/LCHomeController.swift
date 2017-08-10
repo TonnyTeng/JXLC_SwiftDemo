@@ -10,37 +10,19 @@ import UIKit
 import Alamofire
 import ZKProgressHUD
 
-enum CompassPoint{
-
-    case north
-    case south
-    case east
-    case west
-}
-
-struct Student {
-    
-    var name:String
-    var age:Int
-    var sex:String
-    var sorce:Float
-    
-}
-
-
 class LCHomeController: XTViewController {
 
     var scrollView = UIScrollView()
-    var cycleScrollView:CycleScrollView?
+    var cycleScrollView:CycleScrollView!
+    var buyView:LCHomeBuyView!
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated);
-        self.navigationController?.setNavigationBarHidden(true, animated: false);
         if (cycleScrollView != nil) {
             
             cycleScrollView!.reloadData()
         }
-
+        self.navigationController?.setNavigationBarHidden(true, animated: false);
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -53,10 +35,11 @@ class LCHomeController: XTViewController {
         super.viewDidLoad()
         self.title = "首页";
         
-        self.login(isLogin: true);
         self.configBackgroundView();
         self.configTopScrollView();
         self.configTopButton()
+        self.configBuyView();
+        self.configBottomView();
         
        /**
          
@@ -127,10 +110,36 @@ class LCHomeController: XTViewController {
         }
     }
     
+    func configBuyView(){
+        
+        let button:UIButton = self.scrollView.viewWithTag(100) as! UIButton;
+        let rect = CGRect(x:0,y:button.frame.maxY,width:width,height:width * 296 / 573 + 20 + 20 + 60 + 50);
+        buyView = LCHomeBuyView.init(frame: rect);
+        scrollView .addSubview(buyView);
+        
+    }
+    
+    
+    func configBottomView(){
+    
+        let bottomView = LCHomeBottomView.init(frame: CGRect(x:0, y:buyView.frame.maxY,width:width,height:75));
+        scrollView.addSubview(bottomView);
+        
+        if bottomView.frame.maxY > height - 64 - 49 {
+            
+            scrollView.contentSize = CGSize(width:width,height:bottomView.frame.maxY);
+        }
+        
+    }
+    
+    
+    
     //Action
     func showAction(_ button:UIButton) {
         
         NSLog("点击了:\(button.titleLabel?.text)");
+        buyView.nameLabel.text = button.titleLabel?.text;
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -143,7 +152,15 @@ extension LCHomeController: CycleScrollViewDelegate{
     // 点击图片事件
     func cycleScrollViewDidSelect(at index:Int, cycleScrollView:CycleScrollView)
     {
-        print("点击了第\(index+1)个图片")
+        if !UserDefaults.standard.bool(forKey: "Login") {
+            
+            self.showLoginVC(fromVC: self);
+        }else{
+        
+            print("点击了第\(index+1)个图片")
+        }
+        
+        
     }
     /// 图片滚动事件
     func cycleScrollViewDidScroll(to index:Int, cycleScrollView:CycleScrollView)

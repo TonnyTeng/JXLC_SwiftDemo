@@ -27,6 +27,10 @@
 		062CD53D1F025178007833B0 /* LCFinancialController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062CD53C1F025178007833B0 /* LCFinancialController.swift */; };
 		062CD53F1F025190007833B0 /* LCActivityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062CD53E1F025190007833B0 /* LCActivityController.swift */; };
 		062CD5411F02519B007833B0 /* LCMyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062CD5401F02519B007833B0 /* LCMyController.swift */; };
+		062D765B1F3C3707004E6E08 /* FincialCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062D76591F3C3707004E6E08 /* FincialCell.swift */; };
+		062D765C1F3C3707004E6E08 /* FincialCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 062D765A1F3C3707004E6E08 /* FincialCell.xib */; };
+		062D765E1F3C4D45004E6E08 /* LCHomeBuyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062D765D1F3C4D45004E6E08 /* LCHomeBuyView.swift */; };
+		062D76601F3C5685004E6E08 /* LCHomeBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062D765F1F3C5685004E6E08 /* LCHomeBottomView.swift */; };
 		063438E51F2B27B600A6C4C5 /* LCClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063438E41F2B27B600A6C4C5 /* LCClient.swift */; };
 		063438E81F2B36FA00A6C4C5 /* LCRegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063438E61F2B36FA00A6C4C5 /* LCRegisterController.swift */; };
 		063438E91F2B36FA00A6C4C5 /* LCRegisterController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 063438E71F2B36FA00A6C4C5 /* LCRegisterController.xib */; };
@@ -67,7 +71,7 @@
 		061A2A651F038C3800B9711C /* MyMoneyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyMoneyView.swift; sourceTree = "<group>"; };
 		061D8DE41F398B6500B1B5F6 /* FindPassWordCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindPassWordCell.swift; sourceTree = "<group>"; };
 		062CD4F61F020877007833B0 /* JXLiCai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JXLiCai.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		062CD4F91F020877007833B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		062CD4F91F020877007833B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
 		062CD4FE1F020877007833B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		062CD5001F020877007833B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		062CD5031F020877007833B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -85,6 +89,10 @@
 		062CD53C1F025178007833B0 /* LCFinancialController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCFinancialController.swift; sourceTree = "<group>"; };
 		062CD53E1F025190007833B0 /* LCActivityController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCActivityController.swift; sourceTree = "<group>"; };
 		062CD5401F02519B007833B0 /* LCMyController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCMyController.swift; sourceTree = "<group>"; };
+		062D76591F3C3707004E6E08 /* FincialCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FincialCell.swift; sourceTree = "<group>"; };
+		062D765A1F3C3707004E6E08 /* FincialCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FincialCell.xib; sourceTree = "<group>"; };
+		062D765D1F3C4D45004E6E08 /* LCHomeBuyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCHomeBuyView.swift; sourceTree = "<group>"; };
+		062D765F1F3C5685004E6E08 /* LCHomeBottomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCHomeBottomView.swift; sourceTree = "<group>"; };
 		063438E41F2B27B600A6C4C5 /* LCClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCClient.swift; sourceTree = "<group>"; };
 		063438E61F2B36FA00A6C4C5 /* LCRegisterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCRegisterController.swift; sourceTree = "<group>"; };
 		063438E71F2B36FA00A6C4C5 /* LCRegisterController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LCRegisterController.xib; sourceTree = "<group>"; };
@@ -147,6 +155,7 @@
 		06161E6C1F29D1AE0027E38F /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				062CD4F91F020877007833B0 /* AppDelegate.swift */,
 				06161E6F1F29D2260027E38F /* LCLoginController.swift */,
 				06161E701F29D2260027E38F /* LCLoginController.xib */,
 				063438E61F2B36FA00A6C4C5 /* LCRegisterController.swift */,
@@ -196,7 +205,6 @@
 		062CD4F81F020877007833B0 /* JXLiCai */ = {
 			isa = PBXGroup;
 			children = (
-				062CD4F91F020877007833B0 /* AppDelegate.swift */,
 				06161E6C1F29D1AE0027E38F /* Login */,
 				0610796F1F2EDCC30031EE34 /* PassWord */,
 				062CD5291F02284F007833B0 /* Home */,
@@ -318,6 +326,8 @@
 		063EACAF1F0A249A0043D78C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				062D76591F3C3707004E6E08 /* FincialCell.swift */,
+				062D765A1F3C3707004E6E08 /* FincialCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -336,6 +346,8 @@
 		063EACB11F0A24C00043D78C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				062D765D1F3C4D45004E6E08 /* LCHomeBuyView.swift */,
+				062D765F1F3C5685004E6E08 /* LCHomeBottomView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -464,6 +476,7 @@
 			files = (
 				062CD5041F020877007833B0 /* LaunchScreen.storyboard in Resources */,
 				062CD5011F020877007833B0 /* Assets.xcassets in Resources */,
+				062D765C1F3C3707004E6E08 /* FincialCell.xib in Resources */,
 				063438E91F2B36FA00A6C4C5 /* LCRegisterController.xib in Resources */,
 				06161E721F29D2260027E38F /* LCLoginController.xib in Resources */,
 				062CD4FF1F020877007833B0 /* Main.storyboard in Resources */,
@@ -540,9 +553,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				064723EA1F3B0CE000E47DA9 /* Extensions.swift in Sources */,
+				062D765B1F3C3707004E6E08 /* FincialCell.swift in Sources */,
 				063EACB71F0A467A0043D78C /* CycleCell.swift in Sources */,
 				062CD5411F02519B007833B0 /* LCMyController.swift in Sources */,
 				064723EE1F3B13AD00E47DA9 /* JXLCAPI.swift in Sources */,
+				062D765E1F3C4D45004E6E08 /* LCHomeBuyView.swift in Sources */,
+				062D76601F3C5685004E6E08 /* LCHomeBottomView.swift in Sources */,
 				06765BA21F0F588100B697F0 /* PushViewController.swift in Sources */,
 				06161E741F29D9620027E38F /* XTTabBarController.swift in Sources */,
 				061A2A641F0357E800B9711C /* HeaderView.swift in Sources */,

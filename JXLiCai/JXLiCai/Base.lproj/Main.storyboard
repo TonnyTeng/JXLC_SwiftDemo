@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -95,10 +94,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="zgX-Dd-wXi">
-                                <rect key="frame" x="46" y="74" width="283" height="31"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="zgX-Dd-wXi">
+                                <rect key="frame" x="50" y="74" width="275" height="31"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="A1R-hF-VRp"/>
+                                    <constraint firstAttribute="height" constant="30" id="ObI-gw-BsS"/>
                                 </constraints>
                                 <segments>
                                     <segment title="祥和宝"/>
@@ -110,30 +109,26 @@
                                     <action selector="changeFinancialType:" destination="PSL-TL-4kA" eventType="valueChanged" id="z1Y-j0-55L"/>
                                 </connections>
                             </segmentedControl>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YoL-b5-Yqb">
-                                <rect key="frame" x="0.0" y="114" width="375" height="504"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </tableView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XGA-Qu-4Jh">
+                                <rect key="frame" x="0.0" y="109" width="375" height="509"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="YoL-b5-Yqb" firstAttribute="top" secondItem="zgX-Dd-wXi" secondAttribute="bottom" constant="10" id="5iv-B4-z4u"/>
-                            <constraint firstAttribute="trailing" secondItem="YoL-b5-Yqb" secondAttribute="trailing" id="8BD-Xn-dGw"/>
-                            <constraint firstItem="Jqt-1c-Vpf" firstAttribute="top" secondItem="YoL-b5-Yqb" secondAttribute="bottom" id="AFH-3A-djC"/>
-                            <constraint firstItem="YoL-b5-Yqb" firstAttribute="leading" secondItem="mmb-i8-EHg" secondAttribute="leading" id="GeA-PD-llQ"/>
-                            <constraint firstAttribute="trailing" secondItem="YoL-b5-Yqb" secondAttribute="trailing" id="Hcf-vk-6zT"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="zgX-Dd-wXi" secondAttribute="trailing" constant="30" id="Jwq-OL-N5b"/>
-                            <constraint firstItem="Jqt-1c-Vpf" firstAttribute="top" secondItem="YoL-b5-Yqb" secondAttribute="bottom" id="O66-6a-zWu"/>
-                            <constraint firstItem="YoL-b5-Yqb" firstAttribute="leading" secondItem="mmb-i8-EHg" secondAttribute="leading" id="Q1w-5F-FhN"/>
-                            <constraint firstItem="YoL-b5-Yqb" firstAttribute="top" secondItem="zgX-Dd-wXi" secondAttribute="bottom" constant="10" id="UWS-tz-lEi"/>
-                            <constraint firstItem="zgX-Dd-wXi" firstAttribute="leading" secondItem="mmb-i8-EHg" secondAttribute="leadingMargin" constant="30" id="WFZ-p2-oec"/>
-                            <constraint firstItem="zgX-Dd-wXi" firstAttribute="top" secondItem="5ga-IT-ial" secondAttribute="bottom" constant="10" id="lrY-nB-Ugv"/>
+                            <constraint firstItem="zgX-Dd-wXi" firstAttribute="leading" secondItem="mmb-i8-EHg" secondAttribute="leading" constant="50" id="KiE-do-yai"/>
+                            <constraint firstItem="XGA-Qu-4Jh" firstAttribute="leading" secondItem="mmb-i8-EHg" secondAttribute="leading" id="SYt-Vl-oV2"/>
+                            <constraint firstItem="zgX-Dd-wXi" firstAttribute="top" secondItem="5ga-IT-ial" secondAttribute="bottom" constant="10" id="ZMA-vI-SE9"/>
+                            <constraint firstItem="Jqt-1c-Vpf" firstAttribute="top" secondItem="XGA-Qu-4Jh" secondAttribute="bottom" id="dAw-6G-DED"/>
+                            <constraint firstItem="XGA-Qu-4Jh" firstAttribute="top" secondItem="zgX-Dd-wXi" secondAttribute="bottom" constant="5" id="ogL-UG-tpu"/>
+                            <constraint firstAttribute="trailing" secondItem="XGA-Qu-4Jh" secondAttribute="trailing" id="wf1-Hn-Bef"/>
+                            <constraint firstAttribute="trailing" secondItem="zgX-Dd-wXi" secondAttribute="trailing" constant="50" id="y8K-R1-7ns"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ymM-Tq-pEx"/>
                     <connections>
+                        <outlet property="scrollView" destination="XGA-Qu-4Jh" id="hlJ-5v-Mar"/>
                         <outlet property="segmentControl" destination="zgX-Dd-wXi" id="5Vg-0j-S2q"/>
-                        <outlet property="tableView" destination="YoL-b5-Yqb" id="qlu-sk-tiC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mFn-rY-moX" userLabel="First Responder" sceneMemberID="firstResponder"/>

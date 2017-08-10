@@ -12,13 +12,14 @@ import ZKProgressHUD
 
 class LCLoginController: UIViewController {
 
+    @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var registerButton: UIButton!
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var telButton: UIButton!
     @IBOutlet weak var passWordButton: UIButton!
     @IBOutlet weak var telTextField: UITextField!
     @IBOutlet weak var passWordTextField: UITextField!
-    
+    var isLogOut = false;
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated);
@@ -44,15 +45,45 @@ class LCLoginController: UIViewController {
         telTextField.clearButtonMode = UITextFieldViewMode.whileEditing;
         passWordTextField.clearButtonMode = UITextFieldViewMode.whileEditing;
     }
-
+    
+    @IBAction func backAction(_ sender: UIButton) {
+        
+        if isLogOut {
+            
+            self.dismiss(animated: true, completion: {
+            
+                //显示首页
+                var myVC = self.parent;
+                var nacv = self.parent?.superclass;
+                
+//                var tabBar = myVC.parent is XTTabBarController;
+//                tabBar.selectedIndex = 0;
+                
+            });
+            
+        }else{
+        
+            self.dismiss(animated: true, completion: {
+                
+            });
+        }
+        
+    }
     @IBAction func loginAction(_ sender: UIButton) {
         
         NSLog("loginAction")
+        UserDefaults.standard.set(true, forKey: "Login");
+        UserDefaults.standard.synchronize();
+        
         ZKProgressHUD.show("正在拼命的加载中🏃🏃🏃")
         DispatchQueue.global().asyncAfter(deadline: DispatchTime.now() + .seconds(3), execute: {
             DispatchQueue.main.async {
                 ZKProgressHUD.dismiss()
-                self.navigationController?.popViewController(animated: true);
+                self.dismiss(animated: true, completion: { 
+                   
+                    
+                });
+//                self.navigationController?.popViewController(animated: true);
                 //                ZKProgressHUD.showInfo("加载完成😁😁😁")
 //                ZKProgressHUD.showSuccess("操作成功👏👏👏")
             }

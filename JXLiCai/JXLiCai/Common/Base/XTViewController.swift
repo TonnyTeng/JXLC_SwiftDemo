@@ -17,8 +17,6 @@ class XTViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated);
        
-
-        
 //        self.navigationController?.setNavigationBarHidden(true, animated: false);
     }
     
@@ -40,17 +38,21 @@ class XTViewController: UIViewController {
         
         self.showDismissButtonItem()
     }
+        
+    func showLoginVC(fromVC:UIViewController){
     
-    func login(isLogin:Bool){
         
         let login = LCLoginController.init(nibName: "LCLoginController", bundle: Bundle.main)
-        if isLogin {
+        if fromVC is LCMyController{
             
-            self.navigationController?.pushViewController(login, animated: true)
-        }else{
-            self.navigationController?.pushViewController(login, animated: true)
+            login.isLogOut = true;
         }
         
+        let navLogin = XTNaviagtionController.init(rootViewController: login);
+        
+        fromVC .present(navLogin, animated: true, completion: {
+            
+        });
     }
     
     func dismissAction(){
