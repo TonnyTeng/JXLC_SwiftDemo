@@ -71,7 +71,7 @@
 		061A2A651F038C3800B9711C /* MyMoneyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyMoneyView.swift; sourceTree = "<group>"; };
 		061D8DE41F398B6500B1B5F6 /* FindPassWordCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindPassWordCell.swift; sourceTree = "<group>"; };
 		062CD4F61F020877007833B0 /* JXLiCai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JXLiCai.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		062CD4F91F020877007833B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
+		062CD4F91F020877007833B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		062CD4FE1F020877007833B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		062CD5001F020877007833B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		062CD5031F020877007833B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -155,7 +155,6 @@
 		06161E6C1F29D1AE0027E38F /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				062CD4F91F020877007833B0 /* AppDelegate.swift */,
 				06161E6F1F29D2260027E38F /* LCLoginController.swift */,
 				06161E701F29D2260027E38F /* LCLoginController.xib */,
 				063438E61F2B36FA00A6C4C5 /* LCRegisterController.swift */,
@@ -205,6 +204,7 @@
 		062CD4F81F020877007833B0 /* JXLiCai */ = {
 			isa = PBXGroup;
 			children = (
+				062CD4F91F020877007833B0 /* AppDelegate.swift */,
 				06161E6C1F29D1AE0027E38F /* Login */,
 				0610796F1F2EDCC30031EE34 /* PassWord */,
 				062CD5291F02284F007833B0 /* Home */,

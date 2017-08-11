@@ -41,25 +41,44 @@ class LCHomeController: XTViewController {
         self.configBuyView();
         self.configBottomView();
         
-       /**
-         
-         ZKProgressHUD.show("正在拼命的加载中🏃🏃🏃")
-         Alamofire.request("http://121.40.95.27/mobile/ss/queryClientImg.do?agentId=2000000122&appId=0000", method: .get).responseJSON {
-         
-         response in
-         
-         print(response.request)  // original URL request
-         print(response.response) // HTTP URL response
-         print(response.data)     // server data
-         print(response.result)   // result of response serialization
-         
-         if let JSON = response.result.value {
-         print("JSON: \(JSON)")
-         }
-         ZKProgressHUD.showInfo("加载完成😁😁😁")
-         }
-         
-         */
+        //http://121.40.95.27/mobile/ss/queryClientImg.do?agentId=2000000122&appId=0000
+        ZKProgressHUD.show("正在拼命的加载中🏃🏃🏃")
+//        Alamofire.request("https://httpbin.org/get", method: .get).responseJSON {
+//            
+//            response in
+//            
+//            print(response.request)  // original URL request
+//            print(response.response) // HTTP URL response
+//            print(response.data)     // server data
+//            print(response.result)   // result of response serialization
+//            
+//            if let JSON = response.result.value {
+//                print("JSON: \(JSON)")
+//            }
+//            ZKProgressHUD.showMessage("加载完成😁😁😁")
+//        }
+        let parameters: Parameters = [
+            "agentId": "2000000122",
+            "appId": "0000",
+        ]
+        
+        let url =  "https://httpbin.org/post"//"http://121.40.95.27/mobile/ss/queryClientImg.do"
+        
+        
+        Alamofire.request("http://121.40.95.27/mobile/ss/queryClientImg.do", method: .post, parameters: parameters, encoding: JSONEncoding(options: [])).responseJSON { response in
+            
+            
+                        print(response.request)  // original URL request
+                        print(response.response) // HTTP URL response
+                        print(response.data)     // server data
+                        print(response.result)   // result of response serialization
+            
+                        if let JSON = response.result.value {
+                            print("JSON: \(JSON)")
+                        }
+                        ZKProgressHUD.showMessage("加载完成😁😁😁")
+        }
+        
         
     }
     //UI
