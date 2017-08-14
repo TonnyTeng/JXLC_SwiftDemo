@@ -42,7 +42,7 @@ class LCHomeController: XTViewController {
         self.configBottomView();
         
         //http://121.40.95.27/mobile/ss/queryClientImg.do?agentId=2000000122&appId=0000
-        ZKProgressHUD.show("正在拼命的加载中🏃🏃🏃")
+//        ZKProgressHUD.show("正在拼命的加载中🏃🏃🏃")
 //        Alamofire.request("https://httpbin.org/get", method: .get).responseJSON {
 //            
 //            response in
@@ -78,8 +78,6 @@ class LCHomeController: XTViewController {
                         }
                         ZKProgressHUD.showMessage("加载完成😁😁😁")
         }
-        
-        
     }
     //UI
     func configBackgroundView(){
