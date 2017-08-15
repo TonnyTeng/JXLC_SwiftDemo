@@ -14,6 +14,7 @@
 		061A2A641F0357E800B9711C /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061A2A631F0357E800B9711C /* HeaderView.swift */; };
 		061A2A661F038C3800B9711C /* MyMoneyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061A2A651F038C3800B9711C /* MyMoneyView.swift */; };
 		061D8DE51F398B6500B1B5F6 /* FindPassWordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061D8DE41F398B6500B1B5F6 /* FindPassWordCell.swift */; };
+		0623FFFD1F42FCE400780AA5 /* LCMoneyFullView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0623FFFC1F42FCE400780AA5 /* LCMoneyFullView.swift */; };
 		062CD4FA1F020877007833B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062CD4F91F020877007833B0 /* AppDelegate.swift */; };
 		062CD4FF1F020877007833B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 062CD4FD1F020877007833B0 /* Main.storyboard */; };
 		062CD5011F020877007833B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 062CD5001F020877007833B0 /* Assets.xcassets */; };
@@ -70,6 +71,7 @@
 		061A2A631F0357E800B9711C /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		061A2A651F038C3800B9711C /* MyMoneyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyMoneyView.swift; sourceTree = "<group>"; };
 		061D8DE41F398B6500B1B5F6 /* FindPassWordCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindPassWordCell.swift; sourceTree = "<group>"; };
+		0623FFFC1F42FCE400780AA5 /* LCMoneyFullView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCMoneyFullView.swift; sourceTree = "<group>"; };
 		062CD4F61F020877007833B0 /* JXLiCai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JXLiCai.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		062CD4F91F020877007833B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		062CD4FE1F020877007833B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -328,6 +330,7 @@
 			children = (
 				062D76591F3C3707004E6E08 /* FincialCell.swift */,
 				062D765A1F3C3707004E6E08 /* FincialCell.xib */,
+				0623FFFC1F42FCE400780AA5 /* LCMoneyFullView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -577,6 +580,7 @@
 				062CD4FA1F020877007833B0 /* AppDelegate.swift in Sources */,
 				06765BA01F0F563400B697F0 /* LCActivityDetailController.swift in Sources */,
 				063EACB31F0A35840043D78C /* CycleScrollView.swift in Sources */,
+				0623FFFD1F42FCE400780AA5 /* LCMoneyFullView.swift in Sources */,
 				062CD5361F023365007833B0 /* XTNaviagtionController.swift in Sources */,
 				061079741F2EDD410031EE34 /* LCPassWordController.swift in Sources */,
 			);

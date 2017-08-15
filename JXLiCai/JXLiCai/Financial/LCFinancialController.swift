@@ -37,10 +37,15 @@ class LCFinancialController: XTViewController {
             let rect = CGRect(x:(CGFloat)(index) * width, y:0, width:width, height:self.scrollView.frame.size.height + 64);
             if index == 3 {
                 
-                let imageView = UIImageView.init(frame: rect);
-                imageView.image = UIImage.init(named: "bg_00");
-                imageView.isUserInteractionEnabled = true;
-                self.scrollView .addSubview(imageView);
+//                let imageView = UIImageView.init(frame: rect);
+//                imageView.image = UIImage.init(named: "bg_00");
+//                imageView.isUserInteractionEnabled = true;
+//                self.scrollView .addSubview(imageView);
+                
+                
+                
+                let fullView = LCMoneyFullView.init(frame: rect);
+                self.scrollView .addSubview(fullView);
                 
             }else{
             
