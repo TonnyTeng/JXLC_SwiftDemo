@@ -52,7 +52,7 @@ class LCMoneyFullView: UIView {
 //        detailButton.layer.borderColor = UIColor.orange.cgColor;
 //        detailButton.layer.borderWidth = 1;
         detailButton.layer.masksToBounds = true;
-        detailButton.setTitleColor(UIColor.orange, for: UIControlState.normal);
+//        detailButton.setTitleColor(UIColor.orange, for: UIControlState.normal);
         detailButton.addTarget(self, action: #selector(clickAction(_:)), for: UIControlEvents.touchUpInside);
         detailButton.tag = 103;
         self.addSubview(detailButton);
