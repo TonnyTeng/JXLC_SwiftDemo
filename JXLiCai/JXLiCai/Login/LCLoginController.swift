@@ -8,7 +8,7 @@
 
 import UIKit
 import ZKProgressHUD
-
+import Alamofire
 
 class LCLoginController: UIViewController {
 
@@ -34,7 +34,13 @@ class LCLoginController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        //下载图片
+        Alamofire.download("https://httpbin.org/image/png").responseData { response in
+            if let data = response.result.value {
+                let image = UIImage(data: data)
+                self.loginButton.setImage(image, for: UIControlState.normal);
+            }
+        }
         self .configUI();
     }
     
@@ -48,22 +54,24 @@ class LCLoginController: UIViewController {
     
     @IBAction func backAction(_ sender: UIButton) {
         
+        
         if isLogOut {
             
-            self.dismiss(animated: true, completion: {
+            self.dismiss(animated: false, completion: {
             
                 //显示首页
-                var myVC = self.parent;
-                var nacv = self.parent?.superclass;
-                
-//                var tabBar = myVC.parent is XTTabBarController;
-//                tabBar.selectedIndex = 0;
+                let tabBarVC:XTTabBarController = UIApplication.shared.keyWindow?.rootViewController as! XTTabBarController;
+                tabBarVC.selectedIndex = 0;
                 
             });
             
         }else{
         
-            self.dismiss(animated: true, completion: {
+            self.dismiss(animated: false, completion: {
+                
+                //显示首页
+                let tabBarVC:XTTabBarController = UIApplication.shared.keyWindow?.rootViewController as! XTTabBarController;
+                tabBarVC.selectedIndex = 0;
                 
             });
         }
@@ -79,8 +87,11 @@ class LCLoginController: UIViewController {
         DispatchQueue.global().asyncAfter(deadline: DispatchTime.now() + .seconds(3), execute: {
             DispatchQueue.main.async {
                 ZKProgressHUD.dismiss()
-                self.dismiss(animated: true, completion: { 
-                   
+                self.dismiss(animated: true, completion: {
+                    
+                    //显示首页
+//                    let tabBarVC:XTTabBarController = UIApplication.shared.keyWindow?.rootViewController as! XTTabBarController;
+//                    tabBarVC.selectedIndex = 0;
                     
                 });
 //                self.navigationController?.popViewController(animated: true);
@@ -123,7 +134,27 @@ class LCLoginController: UIViewController {
     }
     @IBAction func showTelListAction(_ sender: UIButton) {
         
-         NSLog("showTelListAction")
+        let headers: HTTPHeaders = [
+//            "Authorization": "Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==",
+            "Accept": "application/json"
+        ]
+
+        
+        NSLog("showTelListAction")
+        ZKProgressHUD.show("加载...")
+        Alamofire.request("https://api.douban.com/v2/book/search", method: .get, parameters: ["tag":"Swift","count":10], encoding: JSONEncoding(options: []), headers:headers).responseJSON
+            { response in
+            
+            print(response.request)  // original URL request
+            print(response.response) // HTTP URL response
+            print(response.data)     // server data
+            print(response.result)   // result of response serialization
+            
+            if let JSON = response.result.value {
+                print("JSON: \(JSON)")
+            }
+            ZKProgressHUD.dismiss()
+        }
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

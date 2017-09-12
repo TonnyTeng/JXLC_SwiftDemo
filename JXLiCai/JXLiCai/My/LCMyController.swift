@@ -43,13 +43,11 @@ class LCMyController: XTViewController{
         
         self .configDataSource();
         self.automaticallyAdjustsScrollViewInsets = false;
-        tableView = UITableView.init(frame: CGRect(x:0,y:0,width:width,height:height), style:UITableViewStyle.grouped);
+        tableView = UITableView.init(frame: CGRect(x:0,y:0,width:width,height:height - 49), style:UITableViewStyle.grouped);
         tableView.delegate = self;
         tableView.dataSource = self;
         self.view.addSubview(tableView);
     }
-    
-    
     
     func configDataSource() {
         
@@ -70,17 +68,16 @@ class LCMyController: XTViewController{
   
     func messageAction() {
         
-        NSLog("点击了消息")
-    
+        let messageVC = LCMessageController.init();
+        self.navigationController?.pushViewController(messageVC, animated: true)
     }
     
     func settingAction() {
         
         NSLog("点击了设置")
-        UserDefaults.standard.set(false, forKey: "Login");
-        UserDefaults.standard.synchronize();
-        
-        self.showLoginVC(fromVC: self);
+        let settingVC = LCSettingController.init();
+        self.navigationController?.pushViewController(settingVC, animated: true);
+
     }
     
     func itemAction(_ button:UIButton) {
@@ -226,6 +223,7 @@ extension LCMyController: UITableViewDelegate, UITableViewDataSource {
             
             cell?.imageView?.image = UIImage (named: imageString as! String)
             cell?.textLabel?.text = title as? String
+            cell?.textLabel?.font = UIFont.kNormalFont();
         }
         return cell!
     }

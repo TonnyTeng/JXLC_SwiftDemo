@@ -23,6 +23,14 @@ class LCHomeController: XTViewController {
             cycleScrollView!.reloadData()
         }
         self.navigationController?.setNavigationBarHidden(true, animated: false);
+        
+        //  上传
+        let imageData = UIImagePNGRepresentation(UIImage.init(named: "icon_bank_00")!)!
+        
+        Alamofire.upload(imageData, to: "https://httpbin.org/post").responseJSON { response in
+            debugPrint(response)
+        }
+        
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -76,14 +84,13 @@ class LCHomeController: XTViewController {
                         if let JSON = response.result.value {
                             print("JSON: \(JSON)")
                         }
-                        ZKProgressHUD.showMessage("加载完成😁😁😁")
+//                        ZKProgressHUD.showMessage("加载完成😁😁😁")
         }
     }
     //UI
     func configBackgroundView(){
         
         scrollView = UIScrollView.init(frame: CGRect(x:0,y:-20,width:width,height:height - 49 + 20))
-        //        scrollView.contentSize = CGSize(width:width,height:height + 100);
         scrollView.backgroundColor = UIColor.white;
         view .addSubview(scrollView)
     }
@@ -113,7 +120,7 @@ class LCHomeController: XTViewController {
         for i in 0..<4 {
             
             let originX = space + buttonWidth * CGFloat(i);
-            let originY = (cycleScrollView?.frame.size.height)! + (cycleScrollView?.frame.origin.y)!;
+            let originY = cycleScrollView.frame.maxY;//(cycleScrollView?.frame.size.height)! + (cycleScrollView?.frame.origin.y)!;
             let button = UIButton.init(frame: CGRect(x:originX,y:originY,width:buttonWidth,height:buttonWidth))
             button.setTitle(titleArray[i], for: UIControlState.normal);
             button.setTitleColor(UIColor.black, for: UIControlState.normal);
@@ -133,7 +140,6 @@ class LCHomeController: XTViewController {
         let rect = CGRect(x:0,y:button.frame.maxY,width:width,height:width * 296 / 573 + 20 + 20 + 60 + 50);
         buyView = LCHomeBuyView.init(frame: rect);
         scrollView .addSubview(buyView);
-        
     }
     
     
@@ -141,15 +147,8 @@ class LCHomeController: XTViewController {
     
         let bottomView = LCHomeBottomView.init(frame: CGRect(x:0, y:buyView.frame.maxY,width:width,height:75));
         scrollView.addSubview(bottomView);
-        
-        if bottomView.frame.maxY > height - 64 - 49 {
-            
-            scrollView.contentSize = CGSize(width:width,height:bottomView.frame.maxY);
-        }
-        
+        scrollView.contentSize = CGSize(width:width,height:bottomView.frame.maxY - 64 + 20 - 5);
     }
-    
-    
     
     //Action
     func showAction(_ button:UIButton) {

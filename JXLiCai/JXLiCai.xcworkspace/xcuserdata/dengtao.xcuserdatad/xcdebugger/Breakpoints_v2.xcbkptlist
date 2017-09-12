@@ -26,28 +26,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JXLiCai/Login/LCLoginController.swift"
-            timestampString = "524030542.845549"
+            timestampString = "524558845.811406"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
-            landmarkName = "backAction(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "JXLiCai/Home/View/LCHomeBuyView.swift"
-            timestampString = "524483638.576027"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "105"
-            endingLineNumber = "105"
-            landmarkName = "clickAction(_:)"
+            startingLineNumber = "148"
+            endingLineNumber = "148"
+            landmarkName = "showTelListAction(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

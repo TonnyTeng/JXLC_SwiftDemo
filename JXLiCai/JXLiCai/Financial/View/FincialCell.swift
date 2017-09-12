@@ -37,6 +37,15 @@ class FincialCell: UITableViewCell {
     }
 
     
+    func configData(dic:NSDictionary) {
+        
+        
+        
+        
+    }
+    
+    
+    
     // Class 初始化
     override init(style: UITableViewCellStyle, reuseIdentifier: String?)
     {
@@ -51,9 +60,56 @@ class FincialCell: UITableViewCell {
     
     
     override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+       
+        // 获取 contentView 所有子控件
+        
+        // 创建颜色数组
+        let colors = NSMutableArray.init();
+        // 获取所有子控件颜色
+        for view in self.contentView.subviews {
+            
+            if view.backgroundColor != nil {
+                
+                 colors .add(view.backgroundColor!);
+            }else{
+            
+                 colors .add(UIColor.clear);
+            }
+        }
+        // 调用super
+         super.setSelected(selected, animated: animated)
+       
+        // 修改控件颜色
+        for i in 0..<self.contentView.subviews.count{
+        
+            self.contentView.subviews[i].backgroundColor = colors[i] as? UIColor;
+        }
     }
     
+    override func setHighlighted(_ highlighted: Bool, animated: Bool) {
+        
+        // 获取 contentView 所有子控件
+        
+        // 创建颜色数组
+        let colors = NSMutableArray.init();
+        // 获取所有子控件颜色
+        for view in self.contentView.subviews {
+            
+            if view.backgroundColor != nil {
+                
+                colors .add(view.backgroundColor!);
+            }else{
+                
+                colors .add(UIColor.clear);
+            }
+        }
+        // 调用super
+        super.setHighlighted(highlighted, animated: animated);
+        
+        // 修改控件颜色
+        for i in 0..<self.contentView.subviews.count{
+            
+            self.contentView.subviews[i].backgroundColor = colors[i] as? UIColor;
+        }
+    }
 }

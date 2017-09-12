@@ -10,7 +10,7 @@ import UIKit
 
 class LCFinancialController: XTViewController {
 
-    @IBOutlet weak var scrollView: UIScrollView!
+    var scrollView = UIScrollView()
     @IBOutlet weak var segmentControl: UISegmentedControl!
     
     var oneArray    = NSMutableArray()
@@ -20,6 +20,8 @@ class LCFinancialController: XTViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "理财";
+        
         self.configUI();
         
        
@@ -27,22 +29,20 @@ class LCFinancialController: XTViewController {
 
     func configUI(){
     
-        self.title = "理财";
+        self.automaticallyAdjustsScrollViewInsets = false;
         self.hiddenLeftButtonItem();
-        self.scrollView.contentSize = CGSize(width:width * CGFloat(self.segmentControl.numberOfSegments),height:self.scrollView.frame.size.height);
-        self.scrollView.delegate = self;
         
-        for index in 0...self.segmentControl.numberOfSegments - 1{
+        scrollView = UIScrollView.init(frame: CGRect(x:0,y:segmentControl.frame.maxY + 5,width:width,height:height - segmentControl.frame.maxY - 5 - 49));
+        scrollView.contentSize = CGSize(width:width * CGFloat(self.segmentControl.numberOfSegments),height:height - segmentControl.frame.maxY - 5 - 49);
+        scrollView.isPagingEnabled = true;
+        scrollView.delegate = self;
+        view .addSubview(scrollView);
         
-            let rect = CGRect(x:(CGFloat)(index) * width, y:0, width:width, height:self.scrollView.frame.size.height + 64);
+        
+        for index in 0..<self.segmentControl.numberOfSegments{
+        
+            let rect = CGRect(x:(CGFloat)(index) * width, y:0, width:width, height:scrollView.frame.height);
             if index == 3 {
-                
-//                let imageView = UIImageView.init(frame: rect);
-//                imageView.image = UIImage.init(named: "bg_00");
-//                imageView.isUserInteractionEnabled = true;
-//                self.scrollView .addSubview(imageView);
-                
-                
                 
                 let fullView = LCMoneyFullView.init(frame: rect);
                 self.scrollView .addSubview(fullView);
@@ -52,14 +52,13 @@ class LCFinancialController: XTViewController {
                 let tableView = self.getTableView(rect: rect, tag: index + 100);
                 self.scrollView .addSubview(tableView);
             }
-
         }
-        
     }
     
     func getTableView(rect:CGRect,tag:Int)-> UITableView{
     
-        let tableView = UITableView.init(frame: rect, style: UITableViewStyle.plain);
+        
+        let tableView = UITableView.init(frame: rect, style: UITableViewStyle.grouped);
         tableView.tag = tag;
         tableView.register(UINib(nibName: "FincialCell", bundle: Bundle.main), forCellReuseIdentifier: "FincialCell");
         tableView.dataSource = self;
@@ -75,20 +74,7 @@ class LCFinancialController: XTViewController {
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
 
 extension LCFinancialController:UITableViewDelegate,UITableViewDataSource,UIScrollViewDelegate{

@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import SnapKit
+
 
 let width                   = UIScreen.main.bounds.size.width
 let height                  = UIScreen.main.bounds.size.height
@@ -77,20 +79,36 @@ class XTViewController: UIViewController {
         
     }
     
+    //计算文本宽高
+    func getTextHeigh(textStr:String,font:UIFont,width:CGFloat) -> CGFloat {
+        
+        let normalText: NSString = textStr as NSString
+        let size = CGSize.init(width: width, height: 1000)
+        let dic = NSDictionary(object: font, forKey: NSFontAttributeName as NSCopying)
+        let stringSize = normalText.boundingRect(with: size, options: .usesLineFragmentOrigin, attributes: dic as? [String : AnyObject], context:nil).size
+        return stringSize.height
+    }
+    
+    func getTexWidth(textStr:String,font:UIFont,height:CGFloat) -> CGFloat {
+        
+        let normalText: NSString = textStr as NSString
+        
+        let size = CGSize.init(width: 1000, height: height)
+        
+        let dic = NSDictionary(object: font, forKey: NSFontAttributeName as NSCopying)
+        
+        let stringSize = normalText.boundingRect(with: size, options: .usesLineFragmentOrigin, attributes: dic as? [String : AnyObject], context:nil).size
+        
+        return stringSize.width
+        
+    }
+
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

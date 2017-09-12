@@ -13,19 +13,20 @@ class LCHomeBottomView: UIView {
     override init(frame: CGRect) {
         
         super.init(frame: frame);
-        self.backgroundColor = UIColor.lightGray;
+        self.backgroundColor = UIColor.kRGBColor(r: 238, g: 238, b: 238);
         
-        let leftImageView = UIImageView.init(frame: CGRect(x:width / 4 - 45,y:20,width:40,height:35));
+        
+        let leftImageView = UIImageView.init(frame: CGRect(x:(width / 2 - 64 - 40 - 5) / 2,y:20,width:40,height:35));
         leftImageView.image = UIImage.init(named: "Rookie help");
         self.addSubview(leftImageView);
        
-        let leftTitleLabel = UILabel.init(frame: CGRect(x:width / 4,y:20,width:100,height:20));
+        let leftTitleLabel = UILabel.init(frame: CGRect(x:leftImageView.frame.maxX + 5,y:20,width:100,height:20));
         leftTitleLabel.font = UIFont.kTitleFont();
         leftTitleLabel.text = "新手帮助";
         self.addSubview(leftTitleLabel);
         
         
-        let leftSubLabel = UILabel.init(frame: CGRect(x:width / 4,y:20 + 35 - 20,width:100,height:20));
+        let leftSubLabel = UILabel.init(frame: CGRect(x:leftImageView.frame.maxX + 5,y:20 + 35 - 20,width:100,height:20));
         leftSubLabel.textColor = UIColor.darkGray;
         leftSubLabel.font = UIFont.kNormalFont();
         leftSubLabel.text = "图文教程";
@@ -33,18 +34,18 @@ class LCHomeBottomView: UIView {
         
         
         
-        let rightImageView = UIImageView.init(frame: CGRect(x:width * 3 / 4 - 45,y:20,width:40,height:35));
+        let rightImageView = UIImageView.init(frame: CGRect(x:width / 2 + (width / 2 - 32 - 5 - 84) / 2,y:20,width:32,height:36));
         rightImageView.image = UIImage.init(named: "security");
         self.addSubview(rightImageView);
         
         
-        let rightTitleLabel = UILabel.init(frame: CGRect(x:width * 3 / 4,y:20,width:100,height:20));
+        let rightTitleLabel = UILabel.init(frame: CGRect(x:rightImageView.frame.maxX + 5,y:20,width:100,height:20));
         rightTitleLabel.font = UIFont.kTitleFont();
         rightTitleLabel.text = "安全保障";
         self.addSubview(rightTitleLabel);
         
         
-        let rightSubLabel = UILabel.init(frame: CGRect(x:width * 3 / 4,y:20 + 35 - 20,width:100,height:20));
+        let rightSubLabel = UILabel.init(frame: CGRect(x:rightImageView.frame.maxX + 5,y:20 + 35 - 20,width:100,height:20));
         rightSubLabel.textColor = UIColor.darkGray;
         rightSubLabel.font = UIFont.kNormalFont();
         rightSubLabel.text = "专业风控团队";
