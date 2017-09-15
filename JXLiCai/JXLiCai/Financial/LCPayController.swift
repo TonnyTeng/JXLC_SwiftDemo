@@ -36,8 +36,12 @@ class LCPayController: XTViewController {
     
     func surePayAction() {
         
+        let passWordView = LCEnterPassWordView.init(frame: CGRect(x:0,y:0,width:width,height:height));
+        UIApplication.shared.keyWindow?.rootViewController?.view.addSubview(passWordView);
+        passWordView .showEnterPassWordView();
     
-        
+//        let paySuccessVC = LCPaySuccessController.init()
+//        self.navigationController?.pushViewController(paySuccessVC, animated: true);
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

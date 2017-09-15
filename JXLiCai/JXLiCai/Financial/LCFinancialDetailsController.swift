@@ -51,6 +51,36 @@ class LCFinancialDetailsController: XTViewController {
     
     func buyAction(_ button:UIButton) {
        
+        
+        let showSettingPWDView = arc4random() % 2;
+        if showSettingPWDView == 1 {
+            
+            let alertView = UIAlertController.init(title: "设置支付密码", message: "您还没有设置支付密码,设置成功后才能购买产品哟!", preferredStyle: UIAlertControllerStyle.alert);
+            let cancelAction = UIAlertAction.init(title: "取消", style: UIAlertActionStyle.cancel, handler: { (UIAlertAction) in
+                
+                
+            })
+            
+            let sureAction = UIAlertAction.init(title: "设置", style: UIAlertActionStyle.default, handler: { (UIAlertAction) in
+                
+                let payPWDVC = LCPayPassWordController.init();
+                payPWDVC.clickNextAction = self.clickNextAction;
+                self.navigationController?.pushViewController(payPWDVC, animated: true);
+            })
+            //修改取消按钮字体颜色
+            cancelAction .setValue(UIColor.lightGray, forKey: "titleTextColor");
+            
+            alertView .addAction(sureAction);
+            alertView .addAction(cancelAction);
+            self .present(alertView, animated: true, completion: nil);
+        }else{
+        
+            self.clickNextAction();
+        }
+    }
+    
+    func clickNextAction()->Void{
+        
         let payVC = LCPayController.init();
         self.navigationController?.pushViewController(payVC, animated: true);
     }
