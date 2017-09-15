@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>IQKeyboardManagerSwift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Kingfisher.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,17 +37,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>0CD0249F4CBC812FDB1CD9CDED7789DF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>229FB73DC50DE80F8605F6A5CE8909C2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>2F0C0F810568D3E82219429D9D870F04</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6E38ECDBD98B77E8C0A8C7A8DB99A8F9</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>7CCB43AC33067BD026CB0A5793D0DD23</key>
+		<key>732AFB32570DFACC6854703F8A864245</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -52,7 +62,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D0F86B6F53A25C623955088201E1002B</key>
+		<key>C235F77E101E742652CCF98FFDFA5182</key>
 		<dict>
 			<key>primary</key>
 			<true/>

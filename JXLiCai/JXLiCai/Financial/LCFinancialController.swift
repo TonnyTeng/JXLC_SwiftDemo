@@ -21,10 +21,7 @@ class LCFinancialController: XTViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "理财";
-        
         self.configUI();
-        
-       
     }
 
     func configUI(){
@@ -159,7 +156,8 @@ extension LCFinancialController:UITableViewDelegate,UITableViewDataSource,UIScro
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView .deselectRow(at: indexPath, animated: true);
         
-       
+        let detailsVC = LCFinancialDetailsController.init();
+        self.navigationController?.pushViewController(detailsVC, animated: true)
     }
     
     //MARK - UIScrollViewDelegate

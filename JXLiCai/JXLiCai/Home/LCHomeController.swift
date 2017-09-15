@@ -156,6 +156,23 @@ class LCHomeController: XTViewController {
         NSLog("点击了:\(button.titleLabel?.text)");
         buyView.nameLabel.text = button.titleLabel?.text;
         
+//        let financialVC = LCFinancialController.init();
+//        
+//        
+//        if button.titleLabel?.text == "福惠宝" {
+//           financialVC.segmentControl.selectedSegmentIndex = 0;
+//            
+//        }else if button.titleLabel?.text == "祥和宝"{
+//        
+//            financialVC.segmentControl.selectedSegmentIndex = 1;
+//        }else if button.titleLabel?.text == "财充盈"{
+//            
+//           financialVC.segmentControl.selectedSegmentIndex = 2;
+//        }else{
+//        
+//            financialVC.segmentControl.selectedSegmentIndex = 3;
+//        }
+//        self.navigationController?.pushViewController(financialVC, animated: true)
     }
     
     override func didReceiveMemoryWarning() {

@@ -14,31 +14,44 @@ class LCTimerView: UIView {
         
         super.init(frame: frame);
         
-        
-        
         //http://iosfonts.com
      
-        let space = 5
-        let textWidth = 20;
-        let originX = Float((frame.size.width - 35 * 7 - space * 9 - textWidth * 3) / 2);
-        
+        let space:CGFloat = 5.0
+        let textWidth:CGFloat = 20.0;
+        var originX:CGFloat = ((frame.size.width - CGFloat(35.0 * 7.0) - space * 9.0 - textWidth * 3.0) / 2.0);
+        var currentX:CGFloat = ((frame.size.width - CGFloat(35.0 * 7.0) - space * 9.0 - textWidth * 3.0) / 2.0);
         for i in 0..<7 {
             
-            let imageView = UIImageView.init(frame: CGRect(x:originX,y:0,width:35,height:55));
-            imageView.image = UIImage.init(named: "bg_time");
-            self.addSubview(imageView);
+            let button = UIButton.init(frame: CGRect(x:originX,y:0,width:35,height:55));
+            button .setBackgroundImage(UIImage.init(named: "bg_time"), for: UIControlState.normal);
+            button .setTitle("2", for: UIControlState.normal);
+            button .setTitleColor(UIColor.kMainBlueColor(), for: UIControlState.normal);
+            button.titleLabel?.font = UIFont.kBFont(x: 30);
+            button.tag = 100 + i;
+            self .addSubview(button);
             
+            originX = button.frame.maxX + space;
             
-            let dateLabel = UILabel.init(frame: CGRect(x:0,y:50,width:frame.size.width - 60,height:50));
-            dateLabel.text = "2";
-            dateLabel.font = UIFont.systemFont(ofSize: 20);
-            dateLabel.textColor = UIColor .white;
-            dateLabel.textAlignment = NSTextAlignment.center;
-            imageView .addSubview(dateLabel);
+            if i == 2 || i == 4 || i == 6{
+                
+                var type = "天";
+                if i == 4 {
+                    type = "时";
+                }else if (i == 6){
+                
+                    type = "分";//秒
+                }
+                
+                let dateLabel = UILabel.init(frame: CGRect(x:originX,y:0,width:textWidth,height:55));
+                dateLabel.text = type;
+                dateLabel.font = UIFont.systemFont(ofSize: 20);
+                dateLabel.textColor = UIColor .white;
+                dateLabel.textAlignment = NSTextAlignment.center;
+                self .addSubview(dateLabel);
+                
+                originX = dateLabel.frame.maxX + space;
+            }
         }
-        
-        
-        
     }
     
     func clickAction(_ button:UIButton){

@@ -39,11 +39,14 @@
 		063EACB31F0A35840043D78C /* CycleScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063EACB21F0A35840043D78C /* CycleScrollView.swift */; };
 		063EACB51F0A362B0043D78C /* Proxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063EACB41F0A362B0043D78C /* Proxy.swift */; };
 		063EACB71F0A467A0043D78C /* CycleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063EACB61F0A467A0043D78C /* CycleCell.swift */; };
+		0643651F1F67EA3300942590 /* LCFinancialDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0643651E1F67EA3300942590 /* LCFinancialDetailsController.swift */; };
 		064723EA1F3B0CE000E47DA9 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064723E91F3B0CE000E47DA9 /* Extensions.swift */; };
 		064723EE1F3B13AD00E47DA9 /* JXLCAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064723ED1F3B13AD00E47DA9 /* JXLCAPI.swift */; };
+		064A8A4D1F69225C0078CDA7 /* JXDetailsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064A8A4C1F69225C0078CDA7 /* JXDetailsHeaderView.swift */; };
 		06765B9E1F0F283900B697F0 /* ActivityListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06765B9D1F0F283900B697F0 /* ActivityListCell.swift */; };
 		06765BA01F0F563400B697F0 /* LCActivityDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06765B9F1F0F563400B697F0 /* LCActivityDetailController.swift */; };
 		06765BA21F0F588100B697F0 /* PushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06765BA11F0F588100B697F0 /* PushViewController.swift */; };
+		069F57201F6B7E0900CEF91C /* LCPayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069F571F1F6B7E0900CEF91C /* LCPayController.swift */; };
 		06A490AA1F5F8D6200850E79 /* LCMessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A490A91F5F8D6200850E79 /* LCMessageController.swift */; };
 		06A490AD1F5F8E9000850E79 /* LCSettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A490AC1F5F8E9000850E79 /* LCSettingController.swift */; };
 		06A490B11F5FA25900850E79 /* LCMessageHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A490B01F5FA25900850E79 /* LCMessageHeaderView.swift */; };
@@ -107,11 +110,14 @@
 		063EACB21F0A35840043D78C /* CycleScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CycleScrollView.swift; sourceTree = "<group>"; };
 		063EACB41F0A362B0043D78C /* Proxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Proxy.swift; sourceTree = "<group>"; };
 		063EACB61F0A467A0043D78C /* CycleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CycleCell.swift; sourceTree = "<group>"; };
+		0643651E1F67EA3300942590 /* LCFinancialDetailsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCFinancialDetailsController.swift; sourceTree = "<group>"; };
 		064723E91F3B0CE000E47DA9 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		064723ED1F3B13AD00E47DA9 /* JXLCAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXLCAPI.swift; sourceTree = "<group>"; };
+		064A8A4C1F69225C0078CDA7 /* JXDetailsHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXDetailsHeaderView.swift; sourceTree = "<group>"; };
 		06765B9D1F0F283900B697F0 /* ActivityListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityListCell.swift; sourceTree = "<group>"; };
 		06765B9F1F0F563400B697F0 /* LCActivityDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCActivityDetailController.swift; sourceTree = "<group>"; };
 		06765BA11F0F588100B697F0 /* PushViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushViewController.swift; sourceTree = "<group>"; };
+		069F571F1F6B7E0900CEF91C /* LCPayController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCPayController.swift; sourceTree = "<group>"; };
 		06A490A91F5F8D6200850E79 /* LCMessageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCMessageController.swift; sourceTree = "<group>"; };
 		06A490AC1F5F8E9000850E79 /* LCSettingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCSettingController.swift; sourceTree = "<group>"; };
 		06A490B01F5FA25900850E79 /* LCMessageHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCMessageHeaderView.swift; sourceTree = "<group>"; };
@@ -267,6 +273,8 @@
 			children = (
 				063EACAF1F0A249A0043D78C /* View */,
 				062CD53C1F025178007833B0 /* LCFinancialController.swift */,
+				0643651E1F67EA3300942590 /* LCFinancialDetailsController.swift */,
+				069F571F1F6B7E0900CEF91C /* LCPayController.swift */,
 			);
 			path = Financial;
 			sourceTree = "<group>";
@@ -344,6 +352,7 @@
 				062D765A1F3C3707004E6E08 /* FincialCell.xib */,
 				0623FFFC1F42FCE400780AA5 /* LCMoneyFullView.swift */,
 				0635CF9B1F5FF78A001C1417 /* LCTimerView.swift */,
+				064A8A4C1F69225C0078CDA7 /* JXDetailsHeaderView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -591,6 +600,7 @@
 				062D765B1F3C3707004E6E08 /* FincialCell.swift in Sources */,
 				063EACB71F0A467A0043D78C /* CycleCell.swift in Sources */,
 				062CD5411F02519B007833B0 /* LCMyController.swift in Sources */,
+				0643651F1F67EA3300942590 /* LCFinancialDetailsController.swift in Sources */,
 				064723EE1F3B13AD00E47DA9 /* JXLCAPI.swift in Sources */,
 				0635CF9C1F5FF78A001C1417 /* LCTimerView.swift in Sources */,
 				062D765E1F3C4D45004E6E08 /* LCHomeBuyView.swift in Sources */,
@@ -599,9 +609,11 @@
 				06A490AA1F5F8D6200850E79 /* LCMessageController.swift in Sources */,
 				06161E741F29D9620027E38F /* XTTabBarController.swift in Sources */,
 				061A2A641F0357E800B9711C /* HeaderView.swift in Sources */,
+				069F57201F6B7E0900CEF91C /* LCPayController.swift in Sources */,
 				06A490AD1F5F8E9000850E79 /* LCSettingController.swift in Sources */,
 				06A490B11F5FA25900850E79 /* LCMessageHeaderView.swift in Sources */,
 				063438E51F2B27B600A6C4C5 /* LCClient.swift in Sources */,
+				064A8A4D1F69225C0078CDA7 /* JXDetailsHeaderView.swift in Sources */,
 				062CD53B1F02514E007833B0 /* LCHomeController.swift in Sources */,
 				062CD5381F023373007833B0 /* XTTableViewController.swift in Sources */,
 				063EACB51F0A362B0043D78C /* Proxy.swift in Sources */,

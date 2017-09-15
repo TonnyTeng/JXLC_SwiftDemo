@@ -30,7 +30,11 @@ extension UIColor{
         
         return UIColor.init(red: 30/255.0, green: 144/255.0, blue: 255/255.0, alpha: 1);
     }
-    
+   
+    class func kMainYellowColor() -> UIColor {
+        
+        return UIColor.init(red: 239/255.0, green: 148/255.0, blue: 55/255.0, alpha: 1);
+    }
 }
 
 extension UIFont{
@@ -59,6 +63,11 @@ extension UIFont{
         
         return UIFont.systemFont(ofSize: 12);
     }
+    
+}
+
+extension UIView{
+
     
 }
 
