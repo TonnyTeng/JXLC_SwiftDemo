@@ -12,6 +12,7 @@ class LCPayController: XTViewController {
 
     var tableView = UITableView()
     var dataArray = NSMutableArray()
+    var passWordView = LCEnterPassWordView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +21,7 @@ class LCPayController: XTViewController {
         self .configDataSource();
         self.automaticallyAdjustsScrollViewInsets = false;
         tableView = UITableView.init(frame: CGRect(x:0,y:64,width:width,height:height - 64), style:UITableViewStyle.grouped);
-        tableView.rowHeight = 44;
+        tableView.rowHeight = 60;
         tableView.delegate = self;
         tableView.dataSource = self;
         self.view.addSubview(tableView);
@@ -34,18 +35,24 @@ class LCPayController: XTViewController {
         dataArray .add(["image":"icon_bank_02","title":"农业银行(尾号1277)","context":"本次最大可支付2万元","status":"0"])
     }
     
+    func surePassWordAction() {
+        
+        passWordView .cancelShowEnterPassWordView();
+        let paySuccessVC = LCPaySuccessController.init()
+        self.navigationController?.pushViewController(paySuccessVC, animated: true);
+    }
+    
     func surePayAction() {
         
-        let passWordView = LCEnterPassWordView.init(frame: CGRect(x:0,y:0,width:width,height:height));
+        passWordView = LCEnterPassWordView.init(frame: CGRect(x:0,y:0,width:width,height:height));
         UIApplication.shared.keyWindow?.rootViewController?.view.addSubview(passWordView);
         passWordView .showEnterPassWordView();
-    
+        passWordView.sureButton .addTarget(self, action: #selector(surePassWordAction), for: UIControlEvents.touchUpInside);
 //        let paySuccessVC = LCPaySuccessController.init()
 //        self.navigationController?.pushViewController(paySuccessVC, animated: true);
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 }
 //MARK: UITableViewDelegate

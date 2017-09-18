@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,7 +16,7 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="祥和宝" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Igt-53-frT">
@@ -94,13 +94,23 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="75%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="84b-XR-NId">
-                        <rect key="frame" x="255" y="39.5" width="50" height="50"/>
+                        <rect key="frame" x="260" y="39.5" width="50" height="50"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="50" id="Ca1-8s-k4i"/>
                             <constraint firstAttribute="width" constant="50" id="q6W-YM-qEd"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wgD-8z-JW6">
+                        <rect key="frame" x="260" y="39" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="EOy-Zs-H0k"/>
+                            <constraint firstAttribute="height" constant="50" id="Rr8-Hb-gEE"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="1" green="0.1231458116" blue="0.13324866539999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="限购一次" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q1U-dY-hbT">
@@ -116,9 +126,11 @@
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="84b-XR-NId" secondAttribute="trailing" constant="15" id="7b3-zL-A7d"/>
+                    <constraint firstAttribute="trailing" secondItem="84b-XR-NId" secondAttribute="trailing" constant="10" id="7b3-zL-A7d"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="wgD-8z-JW6" secondAttribute="trailing" constant="2" id="BKd-d9-85g"/>
                     <constraint firstAttribute="bottom" secondItem="bQ5-Rp-ej2" secondAttribute="bottom" constant="10" id="DmJ-Rz-feD"/>
                     <constraint firstItem="ehz-YY-FeD" firstAttribute="centerY" secondItem="EpZ-it-znG" secondAttribute="centerY" id="F9y-po-UKt"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="wgD-8z-JW6" secondAttribute="bottom" constant="2" id="FMo-wJ-uy4"/>
                     <constraint firstItem="VFI-en-BsU" firstAttribute="centerX" secondItem="ehz-YY-FeD" secondAttribute="centerX" id="HdD-pO-e56"/>
                     <constraint firstItem="ehz-YY-FeD" firstAttribute="leading" secondItem="EpZ-it-znG" secondAttribute="trailing" constant="30" id="I0e-vT-aFv"/>
                     <constraint firstItem="EpZ-it-znG" firstAttribute="leading" secondItem="bQ5-Rp-ej2" secondAttribute="trailing" constant="30" id="ITc-Dr-Cco"/>
@@ -140,6 +152,7 @@
             </tableViewCellContentView>
             <connections>
                 <outlet property="blueLabel" destination="h8a-Wu-fer" id="UX6-qx-GzT"/>
+                <outlet property="colorLabel" destination="wgD-8z-JW6" id="dE8-yv-dAZ"/>
                 <outlet property="moneyLabel" destination="VFI-en-BsU" id="ksq-JF-yJE"/>
                 <outlet property="nameLabel" destination="Igt-53-frT" id="cFM-1z-WbE"/>
                 <outlet property="progressLabel" destination="84b-XR-NId" id="RDd-Nv-4cd"/>

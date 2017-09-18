@@ -8,7 +8,6 @@
 
 import UIKit
 
-//typealias ClickNextAction = ()->Void
 
 class LCEnterPassWordView: UIView {
 
@@ -16,6 +15,7 @@ class LCEnterPassWordView: UIView {
     var backGroundButton = UIButton()
     var whiteView        = UIView()
     let whiteHeight      = CGFloat(44 * 3 + 40 + 44 + 50 + 20)
+    var sureButton       = UIButton()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -73,10 +73,9 @@ class LCEnterPassWordView: UIView {
         passWordView.lenght = 6
         passWordView.borderRadius = 8
         passWordView.delegate = self
-        
         whiteView .addSubview(passWordView);
         
-        let cancelButton = UIButton.init(frame: CGRect(x:15,y:passWordView.frame.maxY + 20,width:(whiteView.frame.size.width - 30 - 30) / 2,height:50))
+        let cancelButton = UIButton.init(frame: CGRect(x:15,y:passWordView.frame.maxY + 20,width:(whiteView.frame.size.width - 30 - 15) / 2,height:50))
         cancelButton.layer.cornerRadius = 4;
         cancelButton.backgroundColor = UIColor.lightGray;
         cancelButton.setTitleColor(UIColor.white, for: UIControlState.normal);
@@ -85,24 +84,19 @@ class LCEnterPassWordView: UIView {
         cancelButton .addTarget(self, action: #selector(cancelShowEnterPassWordView), for: UIControlEvents.touchUpInside);
         whiteView .addSubview(cancelButton);
        
-        let sureButton = UIButton.init(frame: CGRect(x:30 + (whiteView.frame.size.width - 30 - 30) / 2,y:passWordView.frame.maxY + 20,width:(whiteView.frame.size.width - 30 - 30) / 2,height:50))
+        sureButton = UIButton.init(frame: CGRect(x:30 + (whiteView.frame.size.width - 30 - 30) / 2,y:passWordView.frame.maxY + 20,width:(whiteView.frame.size.width - 30 - 15) / 2,height:50))
         sureButton.layer.cornerRadius = 4;
         sureButton.backgroundColor = UIColor.kMainBlueColor();
         sureButton.setTitleColor(UIColor.white, for: UIControlState.normal);
         sureButton.setTitle("确定", for: UIControlState.normal);
         sureButton.titleLabel?.font = UIFont.kTitleFont();
-        sureButton .addTarget(self, action: #selector(surePassWordAction), for: UIControlEvents.touchUpInside);
+        
         whiteView .addSubview(sureButton);
         
         NotificationCenter.default.addObserver(self, selector: #selector(keyBoardWillShow(_:)), name:NSNotification.Name.UIKeyboardWillShow, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyBoardWillHide(_:)), name:NSNotification.Name.UIKeyboardWillHide, object: nil)
     
     }
-    deinit {
-        //移除通知
-        NotificationCenter.default.removeObserver(self)
-    }
-    
     //选择银行卡
     func selectorBankAction(){
         
@@ -126,7 +120,7 @@ class LCEnterPassWordView: UIView {
                 self.backGroundButton.removeFromSuperview();
                 self.removeFromSuperview();
                 //移除通知
-//                NotificationCenter.default.removeObserver(self)
+                NotificationCenter.default.removeObserver(self)
             }
         }
     }
@@ -139,10 +133,7 @@ class LCEnterPassWordView: UIView {
         };
     }
     
-    func surePassWordAction() {
-        
-        self .cancelShowEnterPassWordView();
-    }
+    
     
     //键盘的出现
     func keyBoardWillShow(_ notification: Notification){

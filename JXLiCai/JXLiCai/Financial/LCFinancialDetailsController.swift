@@ -22,7 +22,7 @@ class LCFinancialDetailsController: XTViewController {
     var headerView:JXDetailsHeaderView!
     let headerHeight:CGFloat    = 391 * 414 / 750//391 * width / 750
     var textField = UITextField()
-    
+    var moneyLabel = UILabel()
     var leftButton = UIButton()
     var rightButton = UIButton()
     
@@ -90,6 +90,7 @@ class LCFinancialDetailsController: XTViewController {
         if textField.text != "" &&  Float(textField.text!)! >= 100 {
             
             textField.text = "\(Float(textField.text!)! - 100)"
+            moneyLabel.text = "\(Float(textField.text!)! - 100)"
         }
     }
     
@@ -101,6 +102,7 @@ class LCFinancialDetailsController: XTViewController {
         }else{
         
             textField.text = "\(Float(textField.text!)! + 100)"
+            moneyLabel.text = "\(Float(textField.text!)! + 100)"
         }
         self .refreshButtonColorAction();
     }
@@ -393,7 +395,6 @@ extension LCFinancialDetailsController: UITableViewDelegate, UITableViewDataSour
                 cell?.contentView .addSubview(leftButton)
                 
                 
-                
                 rightButton = UIButton.init(frame: CGRect(x:width - 15 - 50,y:titleLabel.frame.maxY + 20,width:50,height:50))
                 rightButton.backgroundColor = UIColor.kMainYellowColor();
                 rightButton.setTitleColor(UIColor.white, for: UIControlState.normal);
@@ -424,7 +425,7 @@ extension LCFinancialDetailsController: UITableViewDelegate, UITableViewDataSour
                 cell?.contentView .addSubview(moneyTitleLabel);
                 
                 
-                let moneyLabel = UILabel.init(frame: CGRect(x:15,y:moneyTitleLabel.frame.maxY + 5,width:width - 30,height:20));
+                moneyLabel = UILabel.init(frame: CGRect(x:15,y:moneyTitleLabel.frame.maxY + 5,width:width - 30,height:20));
                 moneyLabel.font = UIFont.kBFont(x:20);
                 moneyLabel.textAlignment = NSTextAlignment.center;
                 moneyLabel.textColor = UIColor.kMainYellowColor();

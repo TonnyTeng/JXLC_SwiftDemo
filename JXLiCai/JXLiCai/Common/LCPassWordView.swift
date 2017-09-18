@@ -20,7 +20,6 @@ protocol LCPassWordViewDelegate : NSObjectProtocol{
             updataUI()
         }
     }
-    
     @IBInspectable var star: String = "●"
     
     @IBInspectable var starColor: UIColor = UIColor.cyan {
@@ -30,7 +29,6 @@ protocol LCPassWordViewDelegate : NSObjectProtocol{
             }
         }
     }
-    
     @IBInspectable var borderColor: UIColor = UIColor.black {
         didSet {
             squareArray.forEach { (label) in
@@ -45,10 +43,8 @@ protocol LCPassWordViewDelegate : NSObjectProtocol{
                 label.layer.borderWidth = borderWidth
                 label.layer.masksToBounds = borderWidth > 0
             }
-            
         }
     }
-    
     @IBInspectable var borderRadius: CGFloat = 0 {
         didSet{
             squareArray.forEach { (label) in
@@ -56,20 +52,12 @@ protocol LCPassWordViewDelegate : NSObjectProtocol{
             }
         }
     }
-    
     var side:       CGFloat!
-    
     var password:   String = ""
-    
     var squareArray = [UILabel]()
-    
     var space:      CGFloat!
-    
     var textField:  UITextField = UITextField()
-    
-    
     var tempArrat   = [String]()
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
         updataUI()
@@ -87,9 +75,10 @@ protocol LCPassWordViewDelegate : NSObjectProtocol{
         for view in self.subviews{
             view.removeFromSuperview()
         }
-        
         side  = self.frame.height
         space = (self.frame.width - (CGFloat(lenght) * side)) / CGFloat(lenght - 1)
+        
+        
         for index in 0..<lenght{
             
             let label = UILabel(frame: CGRect(x: (space + side) * CGFloat(index), y: 0, width: side, height: side))

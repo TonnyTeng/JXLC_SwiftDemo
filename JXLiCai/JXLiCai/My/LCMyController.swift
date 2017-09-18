@@ -84,6 +84,22 @@ class LCMyController: XTViewController{
         
         
         NSLog("\(button.titleLabel!.text)");
+        if button.titleLabel?.text == "推荐有礼" {
+            
+            let gift = LCGiftController.init()
+            self.navigationController?.pushViewController(gift, animated: true);
+        }
+        if button.titleLabel?.text == "我的投资" {
+            
+            let gift = LCGiftController.init()
+            self.navigationController?.pushViewController(gift, animated: true);
+        }
+        if button.titleLabel?.text == "财富记录" {
+            
+            let gift = LCWealthRecordController.init()
+            self.navigationController?.pushViewController(gift, animated: true);
+        }
+        
     }
     
     //是否显示金额
@@ -231,10 +247,10 @@ extension LCMyController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView .deselectRow(at: indexPath, animated: true);
         
-        let array = dataArray[indexPath.section] as! [NSDictionary]
-        let dic = array[indexPath.row];
-        
-        let title = dic[TITLE];
+//        let array = dataArray[indexPath.section] as! [NSDictionary]
+//        let dic = array[indexPath.row];
+//        
+//        let title = dic[TITLE];
         NSLog("选择:\(title)")
     }
 }

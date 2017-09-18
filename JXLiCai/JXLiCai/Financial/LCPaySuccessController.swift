@@ -53,7 +53,7 @@ extension LCPaySuccessController: UITableViewDelegate, UITableViewDataSource {
             return 35;
         }else{
         
-            return 44
+            return 44;
         }
     }
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {

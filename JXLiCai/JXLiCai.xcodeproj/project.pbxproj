@@ -46,6 +46,9 @@
 		06765B9E1F0F283900B697F0 /* ActivityListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06765B9D1F0F283900B697F0 /* ActivityListCell.swift */; };
 		06765BA01F0F563400B697F0 /* LCActivityDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06765B9F1F0F563400B697F0 /* LCActivityDetailController.swift */; };
 		06765BA21F0F588100B697F0 /* PushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06765BA11F0F588100B697F0 /* PushViewController.swift */; };
+		06896E9C1F6FA3FA006CA25A /* LCGiftController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06896E9B1F6FA3FA006CA25A /* LCGiftController.swift */; };
+		06896E9F1F6FA7A8006CA25A /* LCWealthRecordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06896E9E1F6FA7A8006CA25A /* LCWealthRecordController.swift */; };
+		06896EA21F6FB0C5006CA25A /* LCWealthRecordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06896EA01F6FB0C4006CA25A /* LCWealthRecordCell.swift */; };
 		069F57201F6B7E0900CEF91C /* LCPayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069F571F1F6B7E0900CEF91C /* LCPayController.swift */; };
 		069F57221F6BA69000CEF91C /* LCPayPassWordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069F57211F6BA69000CEF91C /* LCPayPassWordController.swift */; };
 		069F57241F6BB0F200CEF91C /* LCPaySuccessController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069F57231F6BB0F200CEF91C /* LCPaySuccessController.swift */; };
@@ -121,6 +124,9 @@
 		06765B9D1F0F283900B697F0 /* ActivityListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityListCell.swift; sourceTree = "<group>"; };
 		06765B9F1F0F563400B697F0 /* LCActivityDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCActivityDetailController.swift; sourceTree = "<group>"; };
 		06765BA11F0F588100B697F0 /* PushViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushViewController.swift; sourceTree = "<group>"; };
+		06896E9B1F6FA3FA006CA25A /* LCGiftController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCGiftController.swift; sourceTree = "<group>"; };
+		06896E9E1F6FA7A8006CA25A /* LCWealthRecordController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCWealthRecordController.swift; sourceTree = "<group>"; };
+		06896EA01F6FB0C4006CA25A /* LCWealthRecordCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCWealthRecordCell.swift; sourceTree = "<group>"; };
 		069F571F1F6B7E0900CEF91C /* LCPayController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCPayController.swift; sourceTree = "<group>"; };
 		069F57211F6BA69000CEF91C /* LCPayPassWordController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCPayPassWordController.swift; sourceTree = "<group>"; };
 		069F57231F6BB0F200CEF91C /* LCPaySuccessController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCPaySuccessController.swift; sourceTree = "<group>"; };
@@ -301,11 +307,14 @@
 		062CD52A1F02284F007833B0 /* My */ = {
 			isa = PBXGroup;
 			children = (
+				062CD5401F02519B007833B0 /* LCMyController.swift */,
+				06896E9D1F6FA794006CA25A /* Wealth */,
+				06896E991F6FA004006CA25A /* Bank */,
+				06896E9A1F6FA004006CA25A /* Gift */,
 				06A490AB1F5F8E6D00850E79 /* Setting */,
 				06A490A81F5F8D3900850E79 /* Message */,
 				061A2A611F0357C700B9711C /* Model */,
 				061A2A621F0357C700B9711C /* View */,
-				062CD5401F02519B007833B0 /* LCMyController.swift */,
 			);
 			path = My;
 			sourceTree = "<group>";
@@ -387,6 +396,30 @@
 				062D765F1F3C5685004E6E08 /* LCHomeBottomView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		06896E991F6FA004006CA25A /* Bank */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Bank;
+			sourceTree = "<group>";
+		};
+		06896E9A1F6FA004006CA25A /* Gift */ = {
+			isa = PBXGroup;
+			children = (
+				06896E9B1F6FA3FA006CA25A /* LCGiftController.swift */,
+			);
+			path = Gift;
+			sourceTree = "<group>";
+		};
+		06896E9D1F6FA794006CA25A /* Wealth */ = {
+			isa = PBXGroup;
+			children = (
+				06896E9E1F6FA7A8006CA25A /* LCWealthRecordController.swift */,
+				06896EA01F6FB0C4006CA25A /* LCWealthRecordCell.swift */,
+			);
+			path = Wealth;
 			sourceTree = "<group>";
 		};
 		06A490A81F5F8D3900850E79 /* Message */ = {
@@ -609,6 +642,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				064723EA1F3B0CE000E47DA9 /* Extensions.swift in Sources */,
+				06896E9C1F6FA3FA006CA25A /* LCGiftController.swift in Sources */,
 				062D765B1F3C3707004E6E08 /* FincialCell.swift in Sources */,
 				063EACB71F0A467A0043D78C /* CycleCell.swift in Sources */,
 				062CD5411F02519B007833B0 /* LCMyController.swift in Sources */,
@@ -632,6 +666,7 @@
 				063EACB51F0A362B0043D78C /* Proxy.swift in Sources */,
 				069F57261F6BB8E700CEF91C /* LCEnterPassWordView.swift in Sources */,
 				061D8DE51F398B6500B1B5F6 /* FindPassWordCell.swift in Sources */,
+				06896EA21F6FB0C5006CA25A /* LCWealthRecordCell.swift in Sources */,
 				063438E81F2B36FA00A6C4C5 /* LCRegisterController.swift in Sources */,
 				06765B9E1F0F283900B697F0 /* ActivityListCell.swift in Sources */,
 				062CD53D1F025178007833B0 /* LCFinancialController.swift in Sources */,
@@ -643,6 +678,7 @@
 				06765BA01F0F563400B697F0 /* LCActivityDetailController.swift in Sources */,
 				063EACB31F0A35840043D78C /* CycleScrollView.swift in Sources */,
 				06A490B61F5FC53700850E79 /* LXMessageDetailsController.swift in Sources */,
+				06896E9F1F6FA7A8006CA25A /* LCWealthRecordController.swift in Sources */,
 				069F57221F6BA69000CEF91C /* LCPayPassWordController.swift in Sources */,
 				0623FFFD1F42FCE400780AA5 /* LCMoneyFullView.swift in Sources */,
 				069F57241F6BB0F200CEF91C /* LCPaySuccessController.swift in Sources */,

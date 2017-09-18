@@ -149,7 +149,7 @@ extension LCFinancialController:UITableViewDelegate,UITableViewDataSource,UIScro
         let cellId: String = "FincialCell"
         let cell = tableView.dequeueReusableCell(withIdentifier:cellId, for: indexPath) as? FincialCell;
         cell?.accessoryType = UITableViewCellAccessoryType.none;
-
+        cell?.configData(dic: ["1":"2"]);
         return cell!
     }
     
