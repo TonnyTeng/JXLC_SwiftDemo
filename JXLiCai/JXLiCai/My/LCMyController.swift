@@ -91,13 +91,13 @@ class LCMyController: XTViewController{
         }
         if button.titleLabel?.text == "我的投资" {
             
-            let gift = LCGiftController.init()
-            self.navigationController?.pushViewController(gift, animated: true);
+            let investmentVC = LCInvestmentController.init()
+            self.navigationController?.pushViewController(investmentVC, animated: true);
         }
         if button.titleLabel?.text == "财富记录" {
             
-            let gift = LCWealthRecordController.init()
-            self.navigationController?.pushViewController(gift, animated: true);
+            let recordVC = LCWealthRecordController.init()
+            self.navigationController?.pushViewController(recordVC, animated: true);
         }
         
     }
@@ -240,18 +240,43 @@ extension LCMyController: UITableViewDelegate, UITableViewDataSource {
             cell?.imageView?.image = UIImage (named: imageString as! String)
             cell?.textLabel?.text = title as? String
             cell?.textLabel?.font = UIFont.kNormalFont();
+//            cell?.tag = Int((dic[TAG] as? String)!)!;
         }
         return cell!
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView .deselectRow(at: indexPath, animated: true);
+        let cell = tableView.cellForRow(at: indexPath);
         
-//        let array = dataArray[indexPath.section] as! [NSDictionary]
-//        let dic = array[indexPath.row];
-//        
-//        let title = dic[TITLE];
-        NSLog("选择:\(title)")
+        if cell?.textLabel?.text == "联系我们" {
+            
+            let usVC = LCContactUSController.init();
+            self.navigationController?.pushViewController(usVC, animated: true);
+        }else if cell?.textLabel?.text == "提现"{
+        
+            let moneyVC = LCMoneyManageMentController.init();
+            moneyVC.isCharge = false;
+            self.navigationController?.pushViewController(moneyVC, animated: true);
+        }else if cell?.textLabel?.text == "充值"{
+            
+            let moneyVC = LCMoneyManageMentController.init();
+            moneyVC.isCharge = true;
+            self.navigationController?.pushViewController(moneyVC, animated: true);
+        }else if cell?.textLabel?.text == "银行卡"{
+            
+            let bankVC = LCBankListController.init();
+            self.navigationController?.pushViewController(bankVC, animated: true);
+            
+        }else if cell?.textLabel?.text == "安全中心"{
+            
+            let safeVC = LCSafeController.init();
+            self.navigationController?.pushViewController(safeVC, animated: true);
+        }else{
+        
+            
+        }
+        
     }
 }
 

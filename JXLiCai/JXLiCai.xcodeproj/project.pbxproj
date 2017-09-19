@@ -43,12 +43,21 @@
 		064723EA1F3B0CE000E47DA9 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064723E91F3B0CE000E47DA9 /* Extensions.swift */; };
 		064723EE1F3B13AD00E47DA9 /* JXLCAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064723ED1F3B13AD00E47DA9 /* JXLCAPI.swift */; };
 		064A8A4D1F69225C0078CDA7 /* JXDetailsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064A8A4C1F69225C0078CDA7 /* JXDetailsHeaderView.swift */; };
+		0655F0C31F70AA2500F2907E /* LCMoneyManageMentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0655F0C21F70AA2500F2907E /* LCMoneyManageMentController.swift */; };
+		0655F0C71F70AD9A00F2907E /* LCSafeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0655F0C61F70AD9A00F2907E /* LCSafeController.swift */; };
+		0655F0C91F70ADAC00F2907E /* LCContactUSController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0655F0C81F70ADAC00F2907E /* LCContactUSController.swift */; };
+		0655F0CB1F70CCBF00F2907E /* LCAddBankController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0655F0CA1F70CCBF00F2907E /* LCAddBankController.swift */; };
+		0655F0CD1F70E61A00F2907E /* LCBankAddTelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0655F0CC1F70E61A00F2907E /* LCBankAddTelController.swift */; };
+		0655F0D01F70E6E300F2907E /* LCBaseTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0655F0CF1F70E6E300F2907E /* LCBaseTextFieldCell.swift */; };
+		0655F0D21F70F37100F2907E /* LCBankListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0655F0D11F70F37100F2907E /* LCBankListCell.swift */; };
 		06765B9E1F0F283900B697F0 /* ActivityListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06765B9D1F0F283900B697F0 /* ActivityListCell.swift */; };
 		06765BA01F0F563400B697F0 /* LCActivityDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06765B9F1F0F563400B697F0 /* LCActivityDetailController.swift */; };
 		06765BA21F0F588100B697F0 /* PushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06765BA11F0F588100B697F0 /* PushViewController.swift */; };
 		06896E9C1F6FA3FA006CA25A /* LCGiftController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06896E9B1F6FA3FA006CA25A /* LCGiftController.swift */; };
 		06896E9F1F6FA7A8006CA25A /* LCWealthRecordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06896E9E1F6FA7A8006CA25A /* LCWealthRecordController.swift */; };
 		06896EA21F6FB0C5006CA25A /* LCWealthRecordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06896EA01F6FB0C4006CA25A /* LCWealthRecordCell.swift */; };
+		06896EA61F6FD2DF006CA25A /* LCInvestmentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06896EA51F6FD2DF006CA25A /* LCInvestmentController.swift */; };
+		06896EA81F6FD346006CA25A /* LCBankListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06896EA71F6FD346006CA25A /* LCBankListController.swift */; };
 		069F57201F6B7E0900CEF91C /* LCPayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069F571F1F6B7E0900CEF91C /* LCPayController.swift */; };
 		069F57221F6BA69000CEF91C /* LCPayPassWordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069F57211F6BA69000CEF91C /* LCPayPassWordController.swift */; };
 		069F57241F6BB0F200CEF91C /* LCPaySuccessController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069F57231F6BB0F200CEF91C /* LCPaySuccessController.swift */; };
@@ -121,12 +130,21 @@
 		064723E91F3B0CE000E47DA9 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		064723ED1F3B13AD00E47DA9 /* JXLCAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXLCAPI.swift; sourceTree = "<group>"; };
 		064A8A4C1F69225C0078CDA7 /* JXDetailsHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXDetailsHeaderView.swift; sourceTree = "<group>"; };
+		0655F0C21F70AA2500F2907E /* LCMoneyManageMentController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCMoneyManageMentController.swift; sourceTree = "<group>"; };
+		0655F0C61F70AD9A00F2907E /* LCSafeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCSafeController.swift; sourceTree = "<group>"; };
+		0655F0C81F70ADAC00F2907E /* LCContactUSController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCContactUSController.swift; sourceTree = "<group>"; };
+		0655F0CA1F70CCBF00F2907E /* LCAddBankController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCAddBankController.swift; sourceTree = "<group>"; };
+		0655F0CC1F70E61A00F2907E /* LCBankAddTelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCBankAddTelController.swift; sourceTree = "<group>"; };
+		0655F0CF1F70E6E300F2907E /* LCBaseTextFieldCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCBaseTextFieldCell.swift; sourceTree = "<group>"; };
+		0655F0D11F70F37100F2907E /* LCBankListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCBankListCell.swift; sourceTree = "<group>"; };
 		06765B9D1F0F283900B697F0 /* ActivityListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityListCell.swift; sourceTree = "<group>"; };
 		06765B9F1F0F563400B697F0 /* LCActivityDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCActivityDetailController.swift; sourceTree = "<group>"; };
 		06765BA11F0F588100B697F0 /* PushViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushViewController.swift; sourceTree = "<group>"; };
 		06896E9B1F6FA3FA006CA25A /* LCGiftController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCGiftController.swift; sourceTree = "<group>"; };
 		06896E9E1F6FA7A8006CA25A /* LCWealthRecordController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCWealthRecordController.swift; sourceTree = "<group>"; };
 		06896EA01F6FB0C4006CA25A /* LCWealthRecordCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCWealthRecordCell.swift; sourceTree = "<group>"; };
+		06896EA51F6FD2DF006CA25A /* LCInvestmentController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCInvestmentController.swift; sourceTree = "<group>"; };
+		06896EA71F6FD346006CA25A /* LCBankListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCBankListController.swift; sourceTree = "<group>"; };
 		069F571F1F6B7E0900CEF91C /* LCPayController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCPayController.swift; sourceTree = "<group>"; };
 		069F57211F6BA69000CEF91C /* LCPayPassWordController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCPayPassWordController.swift; sourceTree = "<group>"; };
 		069F57231F6BB0F200CEF91C /* LCPaySuccessController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCPaySuccessController.swift; sourceTree = "<group>"; };
@@ -308,6 +326,10 @@
 			isa = PBXGroup;
 			children = (
 				062CD5401F02519B007833B0 /* LCMyController.swift */,
+				0655F0C51F70AD8D00F2907E /* Safe */,
+				0655F0C41F70AD8800F2907E /* ContactUS */,
+				0655F0C11F70AA0500F2907E /* MoneyManageMent */,
+				06896EA41F6FD2C0006CA25A /* Investment */,
 				06896E9D1F6FA794006CA25A /* Wealth */,
 				06896E991F6FA004006CA25A /* Bank */,
 				06896E9A1F6FA004006CA25A /* Gift */,
@@ -333,6 +355,7 @@
 				062CD52E1F0228E7007833B0 /* Base */,
 				064723E91F3B0CE000E47DA9 /* Extensions.swift */,
 				069F57271F6BC5CB00CEF91C /* LCPassWordView.swift */,
+				0655F0CF1F70E6E300F2907E /* LCBaseTextFieldCell.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -398,9 +421,45 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		0655F0C11F70AA0500F2907E /* MoneyManageMent */ = {
+			isa = PBXGroup;
+			children = (
+				0655F0C21F70AA2500F2907E /* LCMoneyManageMentController.swift */,
+			);
+			path = MoneyManageMent;
+			sourceTree = "<group>";
+		};
+		0655F0C41F70AD8800F2907E /* ContactUS */ = {
+			isa = PBXGroup;
+			children = (
+				0655F0C81F70ADAC00F2907E /* LCContactUSController.swift */,
+			);
+			path = ContactUS;
+			sourceTree = "<group>";
+		};
+		0655F0C51F70AD8D00F2907E /* Safe */ = {
+			isa = PBXGroup;
+			children = (
+				0655F0C61F70AD9A00F2907E /* LCSafeController.swift */,
+			);
+			path = Safe;
+			sourceTree = "<group>";
+		};
+		0655F0CE1F70E69D00F2907E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0655F0D11F70F37100F2907E /* LCBankListCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		06896E991F6FA004006CA25A /* Bank */ = {
 			isa = PBXGroup;
 			children = (
+				0655F0CE1F70E69D00F2907E /* View */,
+				06896EA71F6FD346006CA25A /* LCBankListController.swift */,
+				0655F0CA1F70CCBF00F2907E /* LCAddBankController.swift */,
+				0655F0CC1F70E61A00F2907E /* LCBankAddTelController.swift */,
 			);
 			path = Bank;
 			sourceTree = "<group>";
@@ -420,6 +479,14 @@
 				06896EA01F6FB0C4006CA25A /* LCWealthRecordCell.swift */,
 			);
 			path = Wealth;
+			sourceTree = "<group>";
+		};
+		06896EA41F6FD2C0006CA25A /* Investment */ = {
+			isa = PBXGroup;
+			children = (
+				06896EA51F6FD2DF006CA25A /* LCInvestmentController.swift */,
+			);
+			path = Investment;
 			sourceTree = "<group>";
 		};
 		06A490A81F5F8D3900850E79 /* Message */ = {
@@ -646,28 +713,36 @@
 				062D765B1F3C3707004E6E08 /* FincialCell.swift in Sources */,
 				063EACB71F0A467A0043D78C /* CycleCell.swift in Sources */,
 				062CD5411F02519B007833B0 /* LCMyController.swift in Sources */,
+				0655F0C71F70AD9A00F2907E /* LCSafeController.swift in Sources */,
 				0643651F1F67EA3300942590 /* LCFinancialDetailsController.swift in Sources */,
 				064723EE1F3B13AD00E47DA9 /* JXLCAPI.swift in Sources */,
 				0635CF9C1F5FF78A001C1417 /* LCTimerView.swift in Sources */,
 				062D765E1F3C4D45004E6E08 /* LCHomeBuyView.swift in Sources */,
+				0655F0CD1F70E61A00F2907E /* LCBankAddTelController.swift in Sources */,
 				062D76601F3C5685004E6E08 /* LCHomeBottomView.swift in Sources */,
 				06765BA21F0F588100B697F0 /* PushViewController.swift in Sources */,
 				06A490AA1F5F8D6200850E79 /* LCMessageController.swift in Sources */,
 				06161E741F29D9620027E38F /* XTTabBarController.swift in Sources */,
+				0655F0D01F70E6E300F2907E /* LCBaseTextFieldCell.swift in Sources */,
 				061A2A641F0357E800B9711C /* HeaderView.swift in Sources */,
 				069F57201F6B7E0900CEF91C /* LCPayController.swift in Sources */,
 				06A490AD1F5F8E9000850E79 /* LCSettingController.swift in Sources */,
 				06A490B11F5FA25900850E79 /* LCMessageHeaderView.swift in Sources */,
 				063438E51F2B27B600A6C4C5 /* LCClient.swift in Sources */,
+				0655F0CB1F70CCBF00F2907E /* LCAddBankController.swift in Sources */,
+				0655F0C31F70AA2500F2907E /* LCMoneyManageMentController.swift in Sources */,
 				064A8A4D1F69225C0078CDA7 /* JXDetailsHeaderView.swift in Sources */,
+				06896EA81F6FD346006CA25A /* LCBankListController.swift in Sources */,
 				062CD53B1F02514E007833B0 /* LCHomeController.swift in Sources */,
 				062CD5381F023373007833B0 /* XTTableViewController.swift in Sources */,
 				069F57281F6BC5CB00CEF91C /* LCPassWordView.swift in Sources */,
 				063EACB51F0A362B0043D78C /* Proxy.swift in Sources */,
+				06896EA61F6FD2DF006CA25A /* LCInvestmentController.swift in Sources */,
 				069F57261F6BB8E700CEF91C /* LCEnterPassWordView.swift in Sources */,
 				061D8DE51F398B6500B1B5F6 /* FindPassWordCell.swift in Sources */,
 				06896EA21F6FB0C5006CA25A /* LCWealthRecordCell.swift in Sources */,
 				063438E81F2B36FA00A6C4C5 /* LCRegisterController.swift in Sources */,
+				0655F0D21F70F37100F2907E /* LCBankListCell.swift in Sources */,
 				06765B9E1F0F283900B697F0 /* ActivityListCell.swift in Sources */,
 				062CD53D1F025178007833B0 /* LCFinancialController.swift in Sources */,
 				062CD5341F023347007833B0 /* XTViewController.swift in Sources */,
@@ -682,6 +757,7 @@
 				069F57221F6BA69000CEF91C /* LCPayPassWordController.swift in Sources */,
 				0623FFFD1F42FCE400780AA5 /* LCMoneyFullView.swift in Sources */,
 				069F57241F6BB0F200CEF91C /* LCPaySuccessController.swift in Sources */,
+				0655F0C91F70ADAC00F2907E /* LCContactUSController.swift in Sources */,
 				062CD5361F023365007833B0 /* XTNaviagtionController.swift in Sources */,
 				061079741F2EDD410031EE34 /* LCPassWordController.swift in Sources */,
 			);

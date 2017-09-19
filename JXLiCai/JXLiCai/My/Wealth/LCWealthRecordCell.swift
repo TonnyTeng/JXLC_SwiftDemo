@@ -72,9 +72,11 @@ class LCWealthRecordCell: UITableViewCell {
             if model["status"] as? String == "1" {
                 
                 self.statusLabel.text = "充值成功"
+                moneyLabel.textColor = UIColor.kMainYellowColor();
             }else{
                 
                 self.statusLabel.text = "充值失败"
+                self.moneyLabel.textColor = UIColor.lightGray;
             }
             
         }else if tag == 101{
@@ -91,9 +93,11 @@ class LCWealthRecordCell: UITableViewCell {
             if model["status"] as? String == "1" {
                 
                 self.statusLabel.text = "提现成功"
+                moneyLabel.textColor = UIColor.kMainYellowColor();
             }else{
                 
                 self.statusLabel.text = "提现失败"
+                self.moneyLabel.textColor = UIColor.lightGray;
             }
         }else{
         //返息
@@ -111,9 +115,11 @@ class LCWealthRecordCell: UITableViewCell {
             if model["status"] as? String == "1" {
                 
                 self.statusLabel.text = "已返息"
+                moneyLabel.textColor = UIColor.kMainYellowColor();
             }else{
                 
                 self.statusLabel.text = "未返息"
+                self.moneyLabel.textColor = UIColor.lightGray;
             }
         }
         

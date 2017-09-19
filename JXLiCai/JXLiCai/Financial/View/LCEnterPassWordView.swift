@@ -16,7 +16,7 @@ class LCEnterPassWordView: UIView {
     var whiteView        = UIView()
     let whiteHeight      = CGFloat(44 * 3 + 40 + 44 + 50 + 20)
     var sureButton       = UIButton()
-    
+    var titleLabel       = UILabel()
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -32,7 +32,7 @@ class LCEnterPassWordView: UIView {
         whiteView.layer.cornerRadius = 8;
         self .addSubview(whiteView);
         
-        let titleLabel = UILabel.init(frame: CGRect(x:15,y:12,width:whiteView.frame.size.width - 30,height:20));
+        titleLabel = UILabel.init(frame: CGRect(x:15,y:12,width:whiteView.frame.size.width - 30,height:20));
         titleLabel.textAlignment = NSTextAlignment.center;
         titleLabel.font = UIFont.kTitleFont();
         titleLabel.textColor = UIColor.black;
