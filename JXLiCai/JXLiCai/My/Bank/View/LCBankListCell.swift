@@ -30,9 +30,9 @@ class LCBankListCell: UITableViewCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier);
         self.backgroundColor = UIColor.groupTableViewBackground;
         
-        let view = UIView.init(frame: CGRect(x:15,y:5,width:width - 30,height:self.frame.size.height - 10));
+        let view = UIView.init(frame: CGRect(x:15,y:10,width:width - 30,height:100));
         view.backgroundColor = UIColor.white;
-        view.layer.cornerRadius = 4;
+        view.layer.cornerRadius = 8;
         self.contentView.addSubview(view);
         
         

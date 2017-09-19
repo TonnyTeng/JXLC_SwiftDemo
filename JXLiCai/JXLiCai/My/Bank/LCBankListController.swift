@@ -68,7 +68,8 @@ class LCBankListController: XTViewController {
                 
                 self.automaticallyAdjustsScrollViewInsets = false;
                 tableView = UITableView.init(frame: CGRect(x:0,y:64,width:width,height:height - 64), style:UITableViewStyle.grouped);
-                tableView.rowHeight = 80;
+                tableView.separatorStyle = UITableViewCellSeparatorStyle.none;
+                tableView.rowHeight = 120;
                 tableView.delegate = self;
                 tableView.dataSource = self;
                 self.view.addSubview(tableView);
@@ -145,12 +146,11 @@ extension LCBankListController:UITableViewDelegate, UITableViewDataSource {
         var cell: LCBankListCell? = tableView.dequeueReusableCell(withIdentifier: cellId) as?LCBankListCell;
         if cell == nil {
             cell = LCBankListCell (style: UITableViewCellStyle.default, reuseIdentifier: cellId)
-            
+            cell?.accessoryType = UITableViewCellAccessoryType.none;
+            cell?.selectionStyle = UITableViewCellSelectionStyle.none;
         }
-        cell?.accessoryType = UITableViewCellAccessoryType.none;
-        cell?.selectionStyle = UITableViewCellSelectionStyle.none;
-        
-        
+       
+
         return cell!
     }
     
